@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150933241-1');
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Cache-control' content='public'>
+    <meta name='description'
+        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+
+    <!-- Favicon -->
+    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/styles.css'>
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+        crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+
+    <!-- Custom Scripts -->
+    <script>
+       $(document).ready(function () {
+            $('body>footer').load('./components/footer.html');
+            $('body>header').load('./components/navbar.html');
+            
+            var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 100) {
+                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
+                } else {
+                    $('.navbar').css('box-shadow', 'none');
+                }
+            });
+        });
+    </script>
+    <style>
+        .colors > div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-right: .5rem;
+        }
+    </style>
+    <title>Pearl Hacks</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id='header-top'>
+        </div>
+        <header class='py-0 m-0'><h1 class='py-3 m-0'>Style Guide</h1>
+        </header>
+        <div id='header-bottom'>
+        </div>        <div class='container py-5'>
+            <h2>Typography</h2>
+            <div>
+                <h1>Heading 1 - Caviar Dreams, Bold, 40px </h1>
+                <h2>Heading 2 - Proxima Nova, Bold, 32px</h2>
+                <h3>Heading 3 - Proxima Nova, Normal Weight, 28px</h3>
+                <h4>Heading 4 - Proxima Nova, Normal Weight, 24px</h4>
+                <h5>Heading 5 - Proxima Nova, Normal Weight, 20px</h5>
+                <h6 class="text-uppercase">Heading 6 - Proxima Nova, Normal Weight, 16px, Uppercase</h6>
+                <p>Body 1  - Proxima Nova, Normal Weight, 16px</p>
+            </div>
+
+            <h2 class='mt-5'>Colors</h2>
+            <div class='colors d-flex'>
+                <div style='background-color: #fbccd4;''>#fbccd4</div>
+                <div style='background-color: #c7f0c3;'>#c7f0c3</div>
+                <div style='background-color: #3ea381;'>#3ea381</div>
+                <div style='background-color: #d86c91;'>#d86c91</div>
+                <div style='background-color: #284639; color: white !important;'>#284639</div> 
+            </div>
+                
+            <div>
+            </div>
+            <h2 class="mt-5">Components</h2>
+            <div>
+                <a class="mr-1">Link</a>
+                <button class='btn mr-1'>Button</button>
+                <button class='btn btn-outline'>Outlined Button</button>
+            </div>
+            <h2 class='mt-5'>Graphics</h2>
+            <div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150933241-1');
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Cache-control' content='public'>
+    <meta name='description'
+        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+
+    <!-- Favicon -->
+    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/styles.css'>
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+        crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        $(document).ready(function () {
+            $('body>footer').load('./components/footer.html');
+            $('body>header').load('./components/navbar.html');
+            var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 100) {
+                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
+                } else {
+                    $('.navbar').css('box-shadow', 'none');
+                }
+            });
+        });
+    </script>
+    <script src='scripts/sheetsToJSON.js'></script>
+    <script src='scripts/headshots.js'></script>
+    <title>Pearl Hacks</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id='header-top'>
+        </div>
+        <header class='py-0 m-0'><h1 class='py-3 m-0'>About Us</h1>
+        </header>
+        <div id='header-bottom'>
+        </div>
+        <div class='container py-5'>
+            <h2>Our Beginnings</h2>
+            <div class='row d-flex align-items-center'>
+                <div class='col-12 col-lg-7'>
+                    <p>Pearl Hacks was first held in 2014 as one of the only beginner-friendly hackathons
+                        targeted
+                        towards women at the time. It was organized in response to the boom in college
+                        hackathons, where
+                        students got to spend a weekend bringing their technological ideas to life with the help
+                        of
+                        their peers and industry professionals. </p>
+                    <p>But while those hackathons were great at immersing students into tech, it was clear that
+                        the
+                        gender gap and the often intimidating environment at those events was stopping a lot of
+                        women of
+                        all skill levels from signing up. The first Pearl
+                        Hacks, organized by UNC alumni Maegan Clawges, brought in 250 female highschool and
+                        college
+                        students in the hopes of providing them with a great hackathon experience that
+                        sidestepped these
+                        issues.</p>
+                </div>
+
+                <div class='col-12 col-lg-5 p-0'>
+                    <img class='col-12 m-lg-2' style='margin-bottom: 1rem !important;' src='assets/images/aboutus.photo2.jpg'
+                        alt='Pearl Hacks Photo'>
+                </div>
+            </div>
+            <div class='row d-flex align-items-center'>
+                <div class='col-12 col-lg-6'>
+                    <p>By growing and learning from the last four years of Pearl Hacks (which has nearly tripled
+                        in
+                        size), we now strive to be an open and inclusive environment for gender minorities to
+                        experience
+                        hackathons, and hopefully dive deeper into the world of technology after experiencing a
+                        weekend
+                        with us. </p>
+                    <p>First-timers are welcomed to join no matter their level of experience. All that awaits
+                        you is a
+                        weekend of meeting amazing people, learning about technology, and free swag and prizes.
+                        We hope
+                        you join us at this wonderful event! </p>
+                </div>
+                
+                <div class='col-12 col-lg-6 order-lg-first'>
+                    <img class='col-12 p-0' src='assets/images/aboutus.photo1.jpg' alt='Pearl Hacks Photo'>
+                </div>
+            </div>
+            
+            <div class='text-center pt-5'>
+                <a href='https://maeganclawges.com/web/pearlhacks.html' class='btn' target='new'>Learn more</a>
+            </div>
+            <h2 class='pt-5'>Directors</h2>
+            <div id='directorinfo'>
+                
+            </div>
+            <h2 class='pt-5'>Inclusivity Statement</h2>
+            <p>
+                Pearl Hacks is an event designed to uplift and center women and non-binary students. We expect all of our mentors, volunteers, participants, directors, sponsors, judges, and visitors to be respectful of our participants' gender identities and expressions.
+            </p>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

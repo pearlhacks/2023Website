@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150933241-1');
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Cache-control' content='public'>
+    <meta name='description'
+        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+
+    <!-- Favicon -->
+    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='styles.css'>
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+        crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+
+    <!-- Custom Scripts -->
+    <script>
+       $(document).ready(function () {
+            $('body>footer').load('./components/footer.html');
+            $('body>header').load('./components/navbar.html');
+            
+            var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 100) {
+                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
+                } else {
+                    $('.navbar').css('box-shadow', 'none');
+                }
+            });
+        });
+    </script>
+    <script src='scripts/sheetsToJSON.js'></script>
+    <script src='scripts/faq.js'></script>
+    <title>Pearl Hacks</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id='header-top'>
+        </div>
+        <header class='py-0 m-0'><h1 class='py-3 m-0'>FAQ</h1>
+        </header>
+        <div id='header-bottom'>
+        </div>
+        <div class='container py-5'>
+            <h2>Beginner's FAQ</h2>
+            <div id='beginnerfaq'>
+            </div>
+
+            <h2 class='mt-5'>General FAQ</h2>
+            <div id='generalfaq'>
+            </div>
+
+            <h2 class='mt-5'>Guidelines</h2>
+            <div id='guidelines'>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
