@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150933241-1');
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Cache-control' content='public'>
+    <meta name='description'
+        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
+    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+
+    <!-- Favicon -->
+    <link rel='icon' href='/assets/images/ph-favicon.png' type='image/png' />
+    <link rel='shortcut icon' href='/assets/images/ph-favicon.png' type='image/png' />
+
+    <!-- CSS (Bootstrap, Custom Styles, Fonts) -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/styles.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap' rel='stylesheet'>
+    
+    <style>
+        .transparent-nav {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .transparent-nav a {
+            color: white !important;
+            text-shadow: 0px 1px 3px black;
+        }
+
+        .transparent-nav .navbar-brand span, .transparent-nav .navbar-brand b {
+            color: white !important;
+        }
+
+        .transparent-nav .navbar-toggler i {
+            color: white !important;
+        }
+
+        .jumbotron {
+            margin-top: -60px;
+        }
+    </style>
+    
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+        crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        $(document).ready(function () {
+            $('body>footer').load('./components/footer.html');
+            $('body>header').load('./components/navbar.html');
+            $('navbar').addClass('transparent-nav');
+            $('dropdown-menu').addClass('transparent-nav');
+        });
+        let scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 0) {
+                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
+                    $('.navbar').removeClass('transparent-nav');
+                    $('.dropdown-menu').removeClass('transparent-nav');
+                } else {
+                    $('.navbar').css('box-shadow', 'none');
+                    $('.navbar').addClass('transparent-nav');
+                    $('.dropdown-menu').addClass('transparent-nav');
+                }
+            });
+    </script>
+    <script src='scripts/fireflies.js'></script>
+    <script src='scripts/sheetsToJSON.js'></script>
+    <script src='scripts/sponsors.js'></script>
+    <title>Pearl Hacks</title>
+    
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- JUMBOTRON -->
+        <div class='jumbotron p-0 mb-0 bg-white'>
+            <div class='pt-1 p-0 fireflies-container'>
+                <canvas class='m-0 p-0' id="fireflies"></canvas>
+                <div class='row px-md-5 d-flex justify-content-center align-items-center align-content-center'>
+                    <div class='d-flex flex-column justify-content-center align-items-lg-start align-items-center'>
+                        <h2 class='lead pb-0 mb-0 text-white pt-5 mt-5 pt-lg-0'>grow with</h2>
+                        <h1 class='display-4 text-center text-md-left'>PEARL HACKS</h1>
+                        <h4 class='text-white'>Feb. 19th - Feb. 21st</h4>
+                        <h4 class='text-white'>We are going virtual!</h4>
+                        <p class='pt-3 raise d-none d-lg-inline'>
+                            <a class='btn' href='https://pearlhacks1.typeform.com/to/PQtHVjtn' target='new' role='button'>Register Now</a>
+                        </p>
+                    </div>
+                    <div class='d-flex justify-content-center mt-lg-5 pt-lg-3 mb-lg-4 align-items-center align-content-center'>
+                        <img src='assets/images/main_graphic.svg' class='mascot'>
+                    </div>
+                    <div class='col-12 text-center'><p class='pt-3 raise d-lg-none'>
+                        <a class='btn' href='https://pearlhacks1.typeform.com/to/PQtHVjtn' target='new' role='button'>Register Now</a>
+                    </p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOME PAGE STUFF -->
+        <div id='wave-top'>
+        </div>
+        <div class='bg-light2'>
+            <div class='container py-2'>
+                <h2 class='overline text-center text-uppercase'>Who are we?</h2>
+                <p class='lead text-center m-0'>
+                    Pearl Hacks is an annual hackathon for women and non-binary students at UNC
+                    Chapel Hill. We especially cater to first-time hackers who are looking for a supportive environment
+                    to explore technology!
+                    <br>
+                    <a class='btn btn-outline mt-4' href='aboutus.html' role='button'>Read About Us</a>
+                </p>
+            </div>
+        </div>
+        <div id='wave-bottom'>
+        </div>
+
+        <div class='bg-bright'>
+            <div class='container'>
+                <div>
+                    <div class='row py-5'>
+                        <div class='col-12 col-md-6 order-md-2 d-flex flex-column justify-content-center align-content-center'>
+                            <i class="bg-light fas fa-hands-helping mb-3 h3 rounded-circle d-flex justify-content-center align-content-center align-items-center"></i>
+                            <h2 class='h5 text-uppercase font-weight-bold'>Don't know how to code?</h2>
+                            <p>Come anways! We have
+                            workshops, mentors, and fun events for all skill levels. <a href='faq.html'>More FAQ's</a></p>
+
+                            <i class="bg-light fas fa-compass mb-3 h3 rounded-circle d-flex justify-content-center align-content-center align-items-center"></i>
+                            <h2 class='h5 text-uppercase font-weight-bold'>Explore Past projects</h2>
+                            <p>Check out previous projects and prizes from Pearl Hacks on our <a href='https://pearlhacks2020.devpost.com/' target='new'>Devpost</a>.</p>
+                        </div>
+                        
+                        <div class='col-12 col-md-6 d-flex justify-content-center align-content-center align-items-center'>
+                            <p class='p-5 m-0'><img src='assets/images/ph_branch.svg' class='side-graphic'></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid'>
+            <div class='row p-0'>
+                <figure class='col-12 col-md-4 p-0 m-0 d-none d-md-inline'>
+                    <img src='assets/images/home.photo1.jpg' class='p-0 m-0 img-fluid'>
+                </figure>
+                <figure class='col-12 col-md-4 p-0 m-0'>
+                    <img src='assets/images/home.photo2.jpg' class='p-0 m-0 img-fluid'>
+                </figure>
+                <figure class='col-12 col-md-4 p-0 m-0'>
+                    <img src='assets/images/home.photo3.jpg' class='p-0 m-0 img-fluid'>
+                </figure>
+            </div>
+        </div>
+        <!-- SPONSOR US -->
+        <div class='p-3'>
+            <div class='container p-5 text-center bg-light rounded circuit'>
+                <h2 class='h3 font-weight-bold'>Sponsor Pearl Hacks!</h2>
+                <p>
+                    Pearl Hacks would not be possible without help from our sponsors. Consider becoming a sponsor to support our efforts. For
+                    more information, email <a
+                        href='mailto:sponsor@pearlhacks.com'>sponsor@pearlhacks.com</a>. 
+                </p>
+            </div>
+        </div>
+        <!-- SPONSORS -->
+        <div>
+            <div class='container pb-5 pt-3'>
+                <h2 class='text-center'>Past Sponsors</h2>
+                <div id='sponsors' class='d-flex justify-content-center'>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
