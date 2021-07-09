@@ -42,10 +42,9 @@
 
     <!-- Custom Scripts -->
     <script>
-       $(document).ready(function () {
+        $(document).ready(function () {
             $('body>footer').load('./components/footer.html');
             $('body>header').load('./components/navbar.html');
-            
             var scroll_pos = 0;
             $(document).scroll(function() {
                 scroll_pos = $(this).scrollTop();
@@ -57,8 +56,8 @@
             });
         });
     </script>
-    <script src='scripts/sheetsToJSON.js'></script>
-    <script src='scripts/faq.js'></script>
+    <script src='assets/scripts/sheetsToJSON.js'></script>
+    <script src='assets/scripts/headshots.js'></script>
     <title>Pearl Hacks</title>
 </head>
 
@@ -67,25 +66,8 @@
 
     </header>
     <main>
-        <div id='header-top'>
-        </div>
-        <header class='py-0 m-0'><h1 class='py-3 m-0'>FAQ</h1>
-        </header>
-        <div id='header-bottom'>
-        </div>
-        <div class='container py-5'>
-            <h2>Beginner's FAQ</h2>
-            <div id='beginnerfaq'>
-            </div>
+        <div>faq</div>
 
-            <h2 class='mt-5'>General FAQ</h2>
-            <div id='generalfaq'>
-            </div>
-
-            <h2 class='mt-5'>Guidelines</h2>
-            <div id='guidelines'>
-            </div>
-        </div>
     </main>
     <footer>
 

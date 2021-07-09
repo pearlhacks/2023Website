@@ -8,6 +8,8 @@ function buildHTMLString(data) {
             <h3 class='m-0'>
             ${director['Name']}
             </h3>
+            <p class="p-0 m-0 text-muted">${director['Pronouns']}</p>
+
             <span style="width: 200px;">${director['Title']}</span>
         </div>`;
     });
@@ -18,7 +20,7 @@ function buildHTMLString(data) {
 
 $(document).ready(function () {
     // Director Info
-    fetchData('17j3aAtsRJnVuc1V-LDJRF_HLASZNO-J1gPudoXgmbWU', '1').then((data) => {
+    fetchData('1UyRuGWLmWFHdBK4G1-qzmRBxG1Q4d4hLiMx09qlhxUM', '1').then((data) => {
         document.getElementById("directorinfo").innerHTML = buildHTMLString(data)
     });
 });
