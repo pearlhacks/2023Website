@@ -5,6 +5,13 @@
 }
 
 @font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/Proxima Nova Thin.otf');
+    font-weight: 300;
+}
+
+
+@font-face {
     font-family: 'Caviar Dreams';
     src: url('fonts/CaviarDreams.ttf');
 }
@@ -17,20 +24,11 @@
 
 /* VARIABLES & ROOT LEVEL SETTINGS*/
 :root {
-    --light: #fbccd4;
-    --light_transparent: #fbccd46b;
-    --light2: #c7f0c3;
-    --light2_transparent: #c7f0c37a;
-    --bright: rgb(62, 163, 129);
-    --bright_shade1: #287444;
-    --bright_transparent: #37a05d70;
-    --bright2: #d86c91;
-    --bright2_transparent: #d86c926b;
-    --dark: rgb(27, 34, 101);
-    --dark_transparent: rgba(101, 27, 59, 0.432);
-    --dark2: #284639;
-    --dark2_transparent: #2846396c;
-
+    --lightblue: #afe6ff;
+    --midblue: #4f7dde;
+    --darkblue: #34375a;
+    --light: #ffdfb2;
+    --orange: #f6a079;
     --primary-font: 'Proxima Nova';
     --secondary-font: 'Caviar Dreams';
 }
@@ -47,94 +45,48 @@
 /* TOP-LEVEL STYLES */
 * {
     font-family: 'Proxima Nova';
-    color: var(--dark2) !important;
+    font-weight: normal;
+    color: var(--darkblue);
 }
 
 .container {
     max-width: 1000px;
 }
 
+/* STYLESHEET */
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 /* LINKS */
 main a {
-    color: var(--bright2) !important;
 }
 
 main a:hover {
     text-decoration: none;
-    color: var(--bright2_transparent);
 }
 
 /* BUTTONS */
 .btn {
     border-radius: 3rem;
-    background-color: var(--light);
-    color: var(--dark2) !important;
     padding: .5rem 1.5rem;
 }
 
 .btn:hover {
-    background-color: var(--bright2);
-    border-color: var(--bright2);
+
 }
 
 .btn-outline {
     border-radius: 3rem;
-    border: 1px solid var(--bright2);
-    color: white !important;
-    background-color: var(--bright2);
     padding: .5rem 1.5rem;
 }
 
 .btn-outline:hover {
     border-radius: 3rem;
-    border: 1px solid var(--bright2);
-    color: white;
-    background-color: var(--bright2_transparent);
     padding: .5rem 1.5rem;
-}
-
-/* HOME PAGE JUMBOTRON */
-.jumbotron h1 {
-    color: var(--light) !important;
-}
-
-.jumbotron .row {
-    min-height: 100vh;
-    background: linear-gradient(-45deg,var(--bright), var(--dark2), rgb(10, 32, 13));
-    background-image: url("images/Artboard_1.svg");
-    background-size: cover;
-}
-
-.mascot {
-    width: 400px;
-    max-height: 400px;
-    max-width: 80vw;
-}
-
-/* FIREFLIES */
-.fireflies-container {
-    overflow:hidden;
-    position:relative;
-    top: 0; 
-    left: 0;
-    height: 100%;
-}
-  
-#fireflies {
-    z-index:10;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-i.rounded-circle {
-    width: 60px;
-    height: 60px;
-    color: var(--bright) !important;
-}
-
-.side-graphic {
-    height: 300px;
 }
 
 /* BACKGROUND DECORATION */
@@ -202,20 +154,36 @@ main {
 
 main > header {
     text-align: center;
-    background-color: var(--bright_shade1);
+    /*background-color: var(--bright_shade1);*/
 }
 
 main > header > h1 {
-    color: var(--light2) !important;
+    /*color: var(--light2) !important;*/
 }
 
 main h1 {
     font-family: 'Caviar Dreams';
     font-weight: bold;
+    font-size: 3rem;
 }
 
-h2 {
-    font-weight: bold;
+main h2 {
+    color: var(--midblue);
+    font-family: 'Caviar Dreams';
+}
+
+main h3 {
+    font-size: 1.75rem;
+}
+main h4 {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--midblue);
+    font-weight: 300;
+}
+
+main p {
+    font-weight: 300;
 }
 
 /* SPECIFIC CLASSES */
