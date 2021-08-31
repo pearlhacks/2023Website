@@ -68,9 +68,13 @@ main a {
 main a:hover {
     text-decoration: none;
 }
+.jumbotron {
+    background-color: var(--darkblue) !important;
+    height: 100vh;
+}
 
 /* BUTTONS */
-.btn {
+.btn, .btn-secondary  {
     border-radius: 3rem;
     padding: .5rem 1.5rem;
 }
@@ -89,6 +93,14 @@ main a:hover {
     padding: .5rem 1.5rem;
 }
 
+.btn{
+    background-color: var(--light);
+    color: var(--darkblue);
+}
+.btn-secondary {
+    background-color: var(--midblue);
+    color: var(--light);
+}
 /* BACKGROUND DECORATION */
 #header-top {
     background-image: url('images/header-top.png');
@@ -476,4 +488,8 @@ i.rounded-circle {
 
 .side-graphic {
     height: 300px;
+}
+
+.hero-title{
+    color: var(--light)
 }

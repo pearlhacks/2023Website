@@ -32,40 +32,40 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-    
-   <!--<style>
-            .transparent-nav {
-                background-color: transparent !important;
-                box-shadow: none !important;
-            }
-    
-            .transparent-nav a {
-                color: white !important;
-                text-shadow: 0px 1px 3px black;
-            }
-    
-            .transparent-nav .navbar-brand span, .transparent-nav .navbar-brand b {
-                color: white !important;
-            }
-    
-            .transparent-nav .navbar-toggler i {
-                color: white !important;
-            }
-    
-            .jumbotron {
-                margin-top: -60px;
-            }
-        </style>
---> 
+
+    <style>
+        .transparent-nav {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .transparent-nav a {
+            color: white !important;
+            text-shadow: 0px 1px 2px black;
+        }
+
+        .transparent-nav .navbar-brand span,
+        .transparent-nav .navbar-brand b {
+            color: white !important;
+        }
+
+        .transparent-nav .navbar-toggler i {
+            color: white !important;
+        }
+
+        .jumbotron {
+            margin-top: -60px;
+        }
+    </style>
     <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/54e7e1ecc6.js" crossorigin="anonymous"></script>
 
     <!-- Custom Scripts -->
@@ -102,35 +102,63 @@
     <header></header>
     <main>
         <!-- JUMBOTRON -->
-        <div class="jumbotron bg-white p-0 mb-0"> 
+        <div class="jumbotron bg-white p-0 mb-0">
             <div class="pt-1 p-0 fireflies-container">
                 <canvas class="m-0 p-0" id="fireflies"></canvas>
                 <div class="row px-md-5 d-flex justify-content-center align-items-center align-content-center">
-                        <div class="d-flex flex-column justify-content-center align-items-lg-start align-items-center mt-5">
-                                <div class='d-flex flex-column justify-content-center align-items-lg-start align-items-center'>
-
-                            <h1 class="display-4 text-center text-md-left">PEARL HACKS</h1>
-                                </div>
-                            <div class='d-flex justify-content-center mt-lg-5 pt-lg-3 mb-lg-4 align-items-center align-content-center'>
-                                    <img src='assets/images/roughgraphic.jpg' class='mascot' width="500" height="600">
-                                </div>
-                            <p id="countdown"></p>
-                            <p class="pt-3 raise d-none d-lg-inline">
-                                <a class="btn" href="https://pearlhacks1.typeform.com/to/PQtHVjtn" target="new" role="button">Register Now</a>
-                            </p>
+                    <div class="d-flex justify-content-center mt-lg-5 pt-lg-3 mb-lg-4 align-items-center align-content-center">
+                        <img style="width: 450px; height: auto;" src="assets/images/maingraphic.svg" class="mascot">
+                    </div>
+                    <div class=" d-flex flex-column justify-content-center align-items-lg-start align-items-center mt-5">
+                        <div class='d-flex flex-column justify-content-center align-items-lg-start align-items-center'>
+                            <h4 style="color: #fff">discover with</h4>
+                            <h1 class="hero-title display-4 text-center text-md-left">PEARL HACKS</h1>
                         </div>
-                        <div class="col-12 text-center"><p class="pt-3 raise d-lg-none">
-                            <a class="btn" href="https://pearlhacks1.typeform.com/to/PQtHVjtn" target="new" role="button">Register Now</a>
-                        </p></div>
-                    </div></div>
+                        <p style="color: #fff" id="countdown"></p>
+                        <p class="pt-3 raise d-none d-lg-inline">
+                            <a class="btn" href="https://pearlhacks1.typeform.com/to/PQtHVjtn" target="new"
+                                role="button">Register Now</a>
+                        </p>
+                    </div>
+                </div>
+                <!--<div class="row px-md-5 d-flex justify-content-center align-items-center align-content-center">
+                    <div class="raise d-flex flex-column justify-content-center align-items-lg-start align-items-center">
+                        <h2 class="lead pb-0 mb-0 text-white pt-5 mt-5 pt-lg-0">grow with</h2>
+                        <h1 class="display-4 text-center text-md-left">PEARL HACKS</h1>
+                        <p class="h5 text-white"><i class="text-white mr-3 far fa-calendar alt" aria-hidden="true"></i>Feb. 19th - 21st</p>
+                        <p class="h5 text-white">
+                            <i class="fas fa-stopwatch text-white mr-3" aria-hidden="true"></i><span class="text-white" id="countdown">This
+                                event has finished. Thanks for a great PH21!</span>
+
+                        </p>
+                        <p class="h5 text-white"><i class="text-white mr-3 fas fa-map-marker-alt" aria-hidden="true"></i>Virtually via <a href="https://hopin.com/events/pearl-hacks-2021" target="_new"><u class="text-white">Hopin</u></a></p>
+                        <p></p>
+                        <p class="pt-3 raise d-none d-lg-inline">
+                            <a class="btn btn-pink" href="https://docs.google.com/forms/d/1fjW4PSRmW5-YaenH86jkawMS88b9FCp7robjH_PdwlQ" target="new" role="button">Director Interest Form</a>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-lg-5 pt-lg-3 mb-lg-4 align-items-center align-content-center">
+                        <img src="assets/images/maingraphic.svg" class="mascot">frf
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="pt-3 raise d-lg-none">
+                            <a class="btn btn-pink" href="https://docs.google.com/forms/d/1fjW4PSRmW5-YaenH86jkawMS88b9FCp7robjH_PdwlQ" target="new" role="button">Director Interest Form</a>
+
+                        </p>
+                    </div>
+                </div>         ABOUT PH -->
+            </div>
         </div>
-        <!-- ABOUT PH -->
+
         <!-- SPONSORS -->
-        <div style ="background-color: #fff;">
+        <div style="background-color: #fff;">
             <div class='container pb-5 pt-3'>
+                <h2>What is Pearl Hacks?</h2>
+                <div class="row d-flex align-items-center">
+                    <p>Pearl Hacks is an annual hackathon for women and non-binary students, organized at UNC Chapel Hill. We especially cater to first-time hackers who are looking for a supportive environment to explore technology!</p>
+                    </div>
                 <h2 class='text-center'>Sponsors</h2>
                 <div id='sponsors' class='d-flex justify-content-center'>
-
                 </div>
             </div>
         </div>
