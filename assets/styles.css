@@ -75,7 +75,7 @@ main a:hover {
     min-height: 100vh;
     background-color: white !important;
     background: linear-gradient(
--45deg,var(--light), var(--darkblue), rgb(10, 32, 13));
+-225deg,var(--light), var(--darkblue), rgb(10, 32, 13));
     background-size: cover;
 }
 /* BUTTONS */
@@ -422,6 +422,9 @@ background-position: 10vw 10vw;
 
 .navbar-toggler:after {
     content: none !important;
+}
+.transparent-nav a:hover{
+    color: var(--light) !important;
 }
 
 /* DROPDOWN MENU */
