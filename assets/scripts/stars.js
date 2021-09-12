@@ -1,31 +1,30 @@
-
 let WIDTH;
 let HEIGHT;
 let canvas;
 let context;
 let gradient;
-let fireflies = new Array();
+let stars = new Array();
 let rint = 50;
 
 $(document).ready(function(){
-  WIDTH = $('.fireflies-container').width();
-  HEIGHT = $('.fireflies-container').height();
-	canvas = document.getElementById('fireflies');
+  WIDTH = $('.stars-container').width();
+  HEIGHT = $('.stars-container').height();
+	canvas = document.getElementById('stars');
 	$(canvas).attr('width', WIDTH).attr('height',HEIGHT);
 	context = canvas.getContext('2d');
 	for(let i = 0; i < rint; i++) {
-		fireflies[i] = new Circle();
-		fireflies[i].reset();
+		stars[i] = new Circle();
+		stars[i].reset();
 	}
 	setInterval(draw,rint);
 });
 
 function draw() {
 	context.clearRect(0,0,WIDTH,HEIGHT);
-	for(let i = 0; i < fireflies.length; i++) {
-		fireflies[i].fade();
-		fireflies[i].move();
-		fireflies[i].draw();
+	for(let i = 0; i < stars.length; i++) {
+		stars[i].fade();
+		stars[i].move();
+		stars[i].draw();
 	}
 }
 

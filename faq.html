@@ -1,92 +1,400 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang="en">
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-150933241-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150933241-1");
     </script>
 
     <!-- Meta Tags-->
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta http-equiv='Cache-control' content='public'>
-    <meta name='description'
-        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
-    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Cache-control" content="public" />
+    <meta
+      name="description"
+      content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+    />
+    <meta
+      name="google-site-verification"
+      content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
+    />
 
     <!-- Favicon -->
-    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
-    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/ph-favicon.png"
+      type="image/png"
+    />
 
     <!-- CSS (Bootstrap, Custom Styles -->
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
-        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
-    <link rel='stylesheet' href='assets/styles.css'>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
 
     <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
-    </script>
-    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
-        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
-        crossorigin='anonymous'></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
-        crossorigin='anonymous'></script>
-    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54e7e1ecc6.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom Scripts -->
     <script>
-        $(document).ready(function () {
-            $('body>footer').load('./components/footer.html');
-            $('body>header').load('./components/navbar.html');
-            var scroll_pos = 0;
-            $(document).scroll(function() {
-                scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 100) {
-                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
-                } else {
-                    $('.navbar').css('box-shadow', 'none');
-                }
-            });
+      $(document).ready(function () {
+        $("body>footer").load("./components/footer.html");
+        $("body>header").load("./components/navbar.html");
+        var scroll_pos = 0;
+        $(document).scroll(function () {
+          scroll_pos = $(this).scrollTop();
+          if (scroll_pos > 100) {
+            $(".navbar").css("box-shadow", "0px 2px 3px rgb(0,0,0,.3)");
+          } else {
+            $(".navbar").css("box-shadow", "none");
+          }
         });
+      });
     </script>
-    <script src='assets/scripts/sheetsToJSON.js'></script>
-    <script src='assets/scripts/headshots.js'></script>
+    <script src="assets/scripts/sheetsToJSON.js"></script>
+    <script src="assets/scripts/headshots.js"></script>
     <title>Pearl Hacks</title>
-</head>
+  </head>
 
-<body>
-    <header>
-
-    </header>
+  <body>
+    <header></header>
     <main>
-     
-        <header class='py-0 m-0'><h1 class='py-3 m-0'>Pearl Hacks FAQ</h1>
-        </header>
- 
-        <div class='container py-5'>
-            <h2>Beginner's FAQ</h2>
-            <div id='beginnerfaq'>
-            </div>
+      <header class="py-0 m-0">
+        <h1 class="py-3 m-0">Pearl Hacks FAQ</h1>
+      </header>
 
-            <h2 class='mt-5'>General FAQ</h2>
-            <div id='generalfaq'>
+      <div class="container py-5">
+        <h2>Beginner's FAQ</h2>
+        <div id="beginnerfaq">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#beginner1"
+                >
+                  What is a hackathon?
+                </h3>
+                <div class="collapse py-2 pr-2" id="beginner1">
+                  A hackathon is a team event where you make, or “hack” together
+                  a coding project within 24 hours. Teams demo their projects at
+                  the end of the event for the chance to win amazing prizes.
+                  Hackathons are a great place to learn about a particular
+                  technology you might be interested in, meet other people who
+                  are interested in tech, and also exercise your creativity and
+                  curiosity!
+                </div>
+              </div>
             </div>
-
-            <h2 class='mt-5'>Guidelines</h2>
-            <div id='guidelines'>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#beginner2"
+                >
+                  What about my team?
+                </h3>
+                <div class="collapse py-2 pr-2" id="beginner2">
+                  You can create your team with whoever you like, with up to
+                  <b>four people</b>. To keep the judgement process fair, no
+                  exceptions will be made for teams of greater than four. You
+                  can also choose to hack by yourself if you wish.
+                </div>
+              </div>
             </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#beginner3"
+                >
+                  What if I can't code?
+                </h3>
+                <div class="collapse py-2 pr-2" id="beginner3">
+                  Come anyways! We have workshops dedicated to beginner
+                  technologists on the day of the event, and every year many of
+                  our attendees are first-time hackers who have limited coding
+                  experience. Even if you don't want to create a project, a
+                  hackathon is a great place to learn about new things and
+                  network.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <h2 class="mt-5">General FAQ</h2>
+        <div id="generalfaq">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general1"
+                >
+                  How is COVID-19 impacting us?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general1">
+                  In order to minimize large gatherings, Pearl Hacks 2021 will
+                  be an all-virtual event. We are excited to make this event
+                  fulfilling and worthwhile for all of our attendees.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general2"
+                >
+                  How will a virtual event work?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general2">
+                  We will be utilizing Hopin as our virtual platform event,
+                  along with Discord for real-time updates and general
+                  communication. If you don't have an account with these
+                  platforms already, you will need to create one. Please still
+                  register for Pearl Hacks on our Typeform so you can be sent
+                  Discord invites and Hopin ticket links.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general3"
+                >
+                  Can I attend?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general3">
+                  As long as you identify as a woman or non-binary and will be
+                  18 at the start of the hackathon, you are more than welcome to
+                  attend! Professionals are encouraged to attend as mentors,
+                  regardless of gender, and men are also welcome to attend as
+                  volunteers.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general4"
+                >
+                  How do I get "accepted" for the hackathon?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general4">
+                  Anyone who identifies as a woman or non-binary is invited to
+                  participate in Pearl Hacks. Fill out our registration form
+                  once it is open and we will notify you of your acceptance as
+                  the event approaches. General FAQs Can I use old code? All
+                  work on a project should be done at the hackathon. Teams can
+                  use libraries, frameworks, or open-source code in their
+                  projects. Working on a project before the event and
+                  open-sourcing it for the sole purpose of using the code during
+                  the event is against the spirit of the rules and is not
+                  allowed. Adding new features to existing projects is allowed.
+                  Judges will only consider new functionality introduced or new
+                  features added during the hackathon in determining the
+                  winners.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general5"
+                >
+                  How do I get swag and prizes?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general5">
+                  Details coming soon.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#general6"
+                >
+                  How do I get meal reimbursement?
+                </h3>
+                <div class="collapse py-2 pr-2" id="general6">
+                  Details coming soon.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="mt-5">Guidelines</h2>
+        <div id="guidelines">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines1"
+                >
+                  Attendee Requirement
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines1">
+                  In order to attend Pearl Hacks, you must have a valid
+                  university ID, or have graduated within the last 12 months.
+                  You must also be a woman or non-binary student or new grad.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines2"
+                >
+                  Late Signup
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines2">
+                  If you missed the normal registration deadline, you may still
+                  sign up for Pearl Hacks at the event itself. Please note that
+                  we cannot guarantee food or swag for late registrants.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines3"
+                >
+                  Code Requirement
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines3">
+                  All code presented for judging must be written during the
+                  event. Contestants that violate this rule will be
+                  disqualified. The easiest way to avoid doing this is by trying
+                  something you've never done before.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines4"
+                >
+                  MLH Privacy Policy
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines4">
+                  All Pearl Hacks attendees must agree to the
+                  <a href="https://mlh.io/privacy" target="_new"
+                    >MLH Privacy Policy</a
+                  >.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines5"
+                >
+                  MLH Code of Conduct
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines5">
+                  In addition to everything listed on this page, Pearl Hacks
+                  also requires all attendees to abide by the
+                  <a
+                    href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                    target="_new"
+                    >MLH Code of Conduct.</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="rounded collapse-wrapper mb-2">
+                <h3
+                  class="h5 m-0 font-weight-normal collapser collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#guidelines6"
+                >
+                  Inclusivity Expectations
+                </h3>
+                <div class="collapse py-2 pr-2" id="guidelines6">
+                  Pearl Hacks is an event designed to uplift and center women
+                  and non-binary students. We expect all of our mentors,
+                  volunteers, participants, directors, sponsors, judges, and
+                  visitors to be respectful of our participants' gender
+                  identities and expressions.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
