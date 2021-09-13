@@ -1,7 +1,7 @@
-let a = 'https://script.google.com/macros/s/AKfycbzky5bSUWS3gWTKw6Kwg0LvMJaD-gLu98jiCvrt_73VN6rq336uZwNYPQ4Dq01ywO8Bfg/exec'
+let link = 'https://script.google.com/macros/s/AKfycbzky5bSUWS3gWTKw6Kwg0LvMJaD-gLu98jiCvrt_73VN6rq336uZwNYPQ4Dq01ywO8Bfg/exec'
 async function makeGetRequest() {
 
-    let res = await axios.get(a);
+    let res = await axios.get(link);
 
     let data = res.data.GoogleSheetData;
     let names = [];
