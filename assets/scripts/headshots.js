@@ -9,20 +9,11 @@ async function makeGetRequest() {
     let pronouns = [];
     let pic = [];
     for(let i = 1; i < data.length; i++){
-        for(let j = 0; j < data[0].length; j++){
-            if(j == 0){
-                names.push(data[i][j])
-            }
-            if(j == 1){
-                position.push(data[i][j])
-            }
-            if(j == 2){
-                pic.push(data[i][j])
-            }
-            if(j == 3){
-                pronouns.push(data[i][j])
-            }
-        }
+        let idx=0;
+        names.push(data[i][idx])
+        position.push(data[i][idx+1])
+        pic.push(data[i][idx+2])
+        pronouns.push(data[i][idx+3])
     }
     let html = "<div class='d-flex flex-wrap justify-content-center'>";
     for(let ppl= 0; ppl < names.length; ppl++){
