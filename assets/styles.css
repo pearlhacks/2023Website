@@ -52,6 +52,11 @@
   font-family: "Caviar Dreams";
   src: url("fonts/CaviarDreams.ttf");
 }
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("fonts/CaviarDreams_Bold.ttf");
+  font-weight: bold;
+}
 
 @font-face {
   font-family: "Caviar Dreams";
@@ -110,6 +115,7 @@ main a:hover {
 }
 .jumbotron .row {
   min-height: 100vh;
+  width: auto;
   background-color: black;
   background: url("./images/background.svg");
   background-size: cover;
@@ -118,7 +124,7 @@ main a:hover {
   color: white;
 }
 #down-indicator {
-  color: var(--lightblue);
+  color: var(--light);
   position: absolute;
   bottom: 2rem;
   animation: bobble 1s infinite alternate;
@@ -457,7 +463,7 @@ i.bg-light {
 }
 
 .navbar-nav a:hover {
-  color: var(--bright2) !important;
+  color: var(--midblue) !important;
 }
 
 .navbar-brand span,
@@ -475,6 +481,11 @@ i.bg-light {
 .transparent-nav a:hover {
   color: var(--light) !important;
 }
+.nav-link{
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
 
 /* DROPDOWN MENU */
 @media only screen and (min-width: 992px) {
@@ -483,16 +494,38 @@ i.bg-light {
     justify-content: flex-end;
     margin-right: 100px;
   }
+  /*.navbar {
+    backdrop-filter: blur(10px);
+  }*/
 }
 
 .dropdown-menu {
   border: none;
 }
 
+.dropdown-menu, .transparent-nav .dropdown-menu{
+  background-color: white !important;
+}
+.dropdown-menu a{
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--darkblue) !important;
+}
 .dropdown-menu a:active,
 .dropdown-menu a:hover {
-  color: var(--bright2) !important;
+  color: var(--midblue) !important;
   background-color: transparent;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-nav li{
+    max-width: 300px;
+    background-color: white;
+  }
+  .navbar-nav li a{
+    margin-left: 20px;
+    color: var(--darkblue) !important;
+  }
 }
 
 /* FOOTER */
@@ -501,6 +534,8 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   background-color: var(--darkblue);
+  background: url("images/background-mobile.svg");
+  background-size: cover;
 }
 
 footer p,
@@ -621,4 +656,12 @@ i.rounded-circle {
 }
 .shadow {
   box-shadow: -1rem 0 #000;
+}
+
+.title-underline {
+  height: 0.5rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+  background: var(--lightblue);
+  border-radius: 0.25rem;
 }

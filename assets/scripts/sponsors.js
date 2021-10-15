@@ -26,23 +26,23 @@ async function getSponsor() {
     for (let s = 0; s < sponsor.length; s++) {
         if(tier[s] === "Pearl"){
             pearl += `<div class='col-12 col-lg-6 pearl p-3'>
-                        <a href="${site[s]}" target='_blank'>
+                        <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         } else if(tier[s] === "Gold"){
             gold += `<div class='col-12 col-lg-4 gold p-3'>
-                        <a href="${site[s]}" target='_blank'>
+                        <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         }
          else if(tier[s] === "Silver"){
             silver += `<div class='col-12 col-lg-3 silver p-3'>
-                        <a href="${site[s]}" target='_blank'>
+                        <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         } else{
             custom +=  `<div class='col-12 col-lg-2 custom p-3'>
-                        <a href="${site[s]}" target='_blank'>
+                        <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         }
