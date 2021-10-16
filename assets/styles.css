@@ -119,6 +119,7 @@ main a:hover {
   background-color: black;
   background: url("./images/background.svg");
   background-size: cover;
+  background-position: center;
 }
 .jumbotron p {
   color: white;
@@ -179,41 +180,30 @@ main a:hover {
   height: 35px;
   background-color: white !important;
 }
-
-#wave-bottom {
-  background-image: url("images/wave-bottom.png");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: repeat-x;
-  width: 100%;
-  height: 100px;
-  background-color: white !important;
-}
-
 #wave-top {
-  background-image: url("images/wave-top-light.png");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: repeat-x;
+  background-image: url("images/wave_top.svg");
+  background-size: cover;
   width: 100%;
-  height: 100px;
+  height: 150px;
+  background-position: center;
   background-color: white !important;
 }
-
 #wave-bottom {
-  background-image: url("images/wave-bottom-light.png");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: repeat-x;
+  background-image: url("images/wave_bottom.svg");
+  background-size: cover;
   width: 100%;
   height: 100px;
+  background-position: top;
   background-color: white !important;
 }
 
+.about-ph {
+  color: #000;
+}
 .circuit {
   background-image: url("images/circuit-board.svg");
-  background-repeat: repeat;
-  background-size: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* MAIN */
@@ -237,8 +227,8 @@ main h1 {
 
 main h2 {
   color: var(--midblue);
-  font: 2.5em/2.5rem "Caviar Dreams";
-  font-weight: 400;
+  font: 2.25em/2.25rem "Caviar Dreams";
+  font-weight: 700;
 }
 
 main h3 {
@@ -308,9 +298,8 @@ h2.lead {
 i.bg-light {
   background-color: var(--light2) !important;
 }
-
-.bg-light h2 {
-  color: var(--bright) !important;
+.light-head {
+  color: var(--lightblue) !important;
 }
 
 .bg-light2 {
@@ -481,7 +470,7 @@ i.bg-light {
 .transparent-nav a:hover {
   color: var(--light) !important;
 }
-.nav-link{
+.nav-link {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.5px;
@@ -503,10 +492,11 @@ i.bg-light {
   border: none;
 }
 
-.dropdown-menu, .transparent-nav .dropdown-menu{
+.dropdown-menu,
+.transparent-nav .dropdown-menu {
   background-color: white !important;
 }
-.dropdown-menu a{
+.dropdown-menu a {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.5px;
@@ -518,11 +508,11 @@ i.bg-light {
   background-color: transparent;
 }
 @media only screen and (max-width: 991px) {
-  .navbar-nav li{
+  .navbar-nav li {
     max-width: 300px;
     background-color: white;
   }
-  .navbar-nav li a{
+  .navbar-nav li a {
     margin-left: 20px;
     color: var(--darkblue) !important;
   }
@@ -584,7 +574,6 @@ footer a:hover {
   background-color: white !important;
 }
 
-
 /* stars */
 .stars-container {
   overflow: hidden;
@@ -604,18 +593,19 @@ footer a:hover {
 i.rounded-circle {
   width: 60px;
   height: 60px;
-  color: var(--bright) !important;
+  color: white;
 }
 
 .side-graphic {
-  height: 300px;
+  height: 18.75rem;
 }
 
 .hero-title {
   color: var(--lightblue);
 }
 
-.stars {
+.stars,
+.twinkling {
   position: absolute;
   top: 0;
   left: 0;
@@ -624,10 +614,56 @@ i.rounded-circle {
   display: block;
 }
 .stars {
-  background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+  background: url('images/stars.png')
     repeat top center;
-  z-index: 10;
+  z-index: 0;
 }
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.twinkling {
+  background: transparent
+  url('images/twinkling.png') repeat
+    top center;
+  z-index: 0;
+  -moz-animation: move-twink-back 450s linear infinite;
+  -ms-animation: move-twink-back 450s linear infinite;
+  -o-animation: move-twink-back 450s linear infinite;
+  -webkit-animation: move-twink-back 450s linear infinite;
+  animation: move-twink-back 450s linear infinite;
+}
+
 #animate-left {
   height: 100%;
   transform: translateY(4rem);
@@ -642,9 +678,6 @@ i.rounded-circle {
   main h2 {
     color: var(--midblue);
     font: 2.25em/2.25rem "Caviar Dreams";
-  }
-  #down-indicator {
-    display: none;
   }
 }
 
