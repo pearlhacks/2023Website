@@ -110,10 +110,6 @@
   display: inline-block;
 }
 
-/* LINKS */
-main a {
-}
-
 main a:hover {
   text-decoration: none;
 }
