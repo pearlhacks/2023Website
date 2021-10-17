@@ -1,0 +1,35 @@
+.transparent-nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.transparent-nav a {
+  color: white !important;
+  /*text-shadow: 0px 1px 3px white;*/
+}
+
+.transparent-nav a.dropdown-item {
+  color: #34375a !important;
+}
+
+.transparent-nav a.dropdown-item:hover {
+  color: #4f7dde !important;
+}
+
+.transparent-nav .navbar-brand span,
+.transparent-nav .navbar-brand b {
+  color: white !important;
+  font-weight: bold;
+}
+
+.transparent-nav .navbar-toggler i {
+  color: white !important;
+}
+
+.jumbotron {
+  margin-top: -60px;
+}
+
+main p {
+  font-weight: 500;
+}

@@ -2,6 +2,7 @@
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-1rem);
   }
@@ -11,15 +12,18 @@
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-1rem);
   }
 }
+
 @-webkit-keyframes launch {
   0% {
     transform: translateX(6rem);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -31,11 +35,13 @@
     transform: translateX(6rem);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 /* FONT FACE */
 @font-face {
   font-family: "Proxima Nova";
@@ -52,6 +58,7 @@
   font-family: "Caviar Dreams";
   src: url("fonts/CaviarDreams.ttf");
 }
+
 @font-face {
   font-family: "Caviar Dreams";
   src: url("fonts/CaviarDreams_Bold.ttf");
@@ -110,9 +117,11 @@ main a {
 main a:hover {
   text-decoration: none;
 }
+
 .jumbotron {
   height: 100%;
 }
+
 .jumbotron .row {
   min-height: 100vh;
   width: auto;
@@ -120,9 +129,11 @@ main a:hover {
   background: url("./images/background.svg");
   background-size: cover;
 }
+
 .jumbotron p {
   color: white;
 }
+
 #down-indicator {
   color: var(--light);
   position: absolute;
@@ -131,6 +142,7 @@ main a:hover {
   cursor: pointer;
   font-size: 24px;
 }
+
 /* BUTTONS */
 .btn,
 .btn-secondary {
@@ -138,27 +150,30 @@ main a:hover {
   padding: 0.5rem 1.5rem;
 }
 
-.btn:hover {
+.btn-main{
+  background-color: var(--light);
+  color: var(--darkblue);
+  font-weight: bold;
+
 }
 
-.btn-outline {
-  border-radius: 3rem;
-  padding: 0.5rem 1.5rem;
-}
-
-.btn-outline:hover {
-  border-radius: 3rem;
-  padding: 0.5rem 1.5rem;
+.btn-main:hover{
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--light);
+  font-weight: bold;
 }
 
 .btn {
   background-color: var(--light);
   color: var(--darkblue);
 }
+
 .btn-secondary {
   background-color: var(--midblue);
   color: var(--light);
 }
+
 /* BACKGROUND DECORATION */
 #header-top {
   background-image: url("images/header-top.png");
@@ -179,6 +194,7 @@ main a:hover {
   height: 35px;
   background-color: white !important;
 }
+
 #wave-top {
   background-image: url("images/wave_top.svg");
   background-size: cover;
@@ -187,6 +203,7 @@ main a:hover {
   background-position: center;
   background-color: white !important;
 }
+
 #wave-bottom {
   background-image: url("images/wave_bottom.svg");
   background-size: cover;
@@ -199,6 +216,7 @@ main a:hover {
 .about-ph {
   color: #000;
 }
+
 .circuit {
   background-image: url("images/circuit-board.svg");
   background-repeat: no-repeat;
@@ -233,6 +251,7 @@ main h2 {
 main h3 {
   font-size: 1.75rem;
 }
+
 main h4 {
   font-size: 1.25rem;
   font-style: italic;
@@ -297,6 +316,7 @@ h2.lead {
 i.bg-light {
   background-color: var(--light2) !important;
 }
+
 .light-head {
   color: var(--lightblue) !important;
 }
@@ -311,6 +331,7 @@ i.bg-light {
   background-size: 150%;
   background-position: center;
 }
+
 /*wave
 #decoration1 {
     width: 100vw;
@@ -462,18 +483,21 @@ i.bg-light {
 .navbar-toggler {
   border: none;
 }
-
 .navbar-toggler:after {
   content: none !important;
 }
-.transparent-nav a:hover {
+
+.transparent-nav a.nav-link:hover {
   color: var(--light) !important;
+  transform: scale(1.1);
 }
+
 .nav-link {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.5px;
 }
+
 
 /* DROPDOWN MENU */
 @media only screen and (min-width: 992px) {
@@ -482,9 +506,6 @@ i.bg-light {
     justify-content: flex-end;
     margin-right: 100px;
   }
-  /*.navbar {
-    backdrop-filter: blur(10px);
-  }*/
 }
 
 .dropdown-menu {
@@ -495,22 +516,26 @@ i.bg-light {
 .transparent-nav .dropdown-menu {
   background-color: white !important;
 }
+
 .dropdown-menu a {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.5px;
   color: var(--darkblue) !important;
 }
+
 .dropdown-menu a:active,
 .dropdown-menu a:hover {
   color: var(--midblue) !important;
   background-color: transparent;
 }
+
 @media only screen and (max-width: 991px) {
   .navbar-nav li {
     max-width: 300px;
     background-color: white;
   }
+
   .navbar-nav li a {
     margin-left: 20px;
     color: var(--darkblue) !important;
@@ -523,7 +548,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   background-color: var(--darkblue);
-  background: url("images/background-mobile.svg");
+  background: url("images/footer.svg");
   background-size: cover;
 }
 
@@ -612,9 +637,9 @@ i.rounded-circle {
   height: 100%;
   display: block;
 }
+
 .stars {
-  background: url('images/stars.png')
-    repeat top center;
+  background: url("images/stars.png") repeat top center;
   z-index: 0;
 }
 
@@ -622,39 +647,44 @@ i.rounded-circle {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
 }
+
 @-webkit-keyframes move-twink-back {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
 }
+
 @-moz-keyframes move-twink-back {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
 }
+
 @-ms-keyframes move-twink-back {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
 }
 
 .twinkling {
-  background: transparent
-  url('images/twinkling.png') repeat
-    top center;
+  background: transparent url("images/twinkling.png") repeat top center;
   z-index: 0;
   -moz-animation: move-twink-back 450s linear infinite;
   -ms-animation: move-twink-back 450s linear infinite;
@@ -670,17 +700,6 @@ i.rounded-circle {
   animation: launch 1s 1s ease-out forwards;
   -webkit-animation: launch 1s 1s ease-out forwards;
 }
-@media only screen and (max-width: 991px) {
-  main h1 {
-    font: bold 2.75rem/2.75rem "Caviar Dreams";
-  }
-  main h2 {
-    color: var(--midblue);
-    font: 2.25em/2.25rem "Caviar Dreams";
-    font-weight: 700;
-
-  }
-}
 
 .mascot {
   width: 100%;
@@ -688,6 +707,31 @@ i.rounded-circle {
   max-width: 450px;
   height: auto;
 }
+
+@media only screen and (max-width: 991px) {
+  main h1 {
+    font: bold 2.75rem/2.75rem "Caviar Dreams";
+  }
+
+  main h2 {
+    color: var(--midblue);
+    font: 2.25em/2.25rem "Caviar Dreams";
+    font-weight: 700;
+  }
+
+  .admin {
+    margin-top: 1rem;
+  }
+
+  .mascot {
+    padding-top: 0px;
+    width: 85%;
+  }
+  #down-indicator {
+    display: none;
+  }
+}
+
 .shadow {
   box-shadow: -1rem 0 #000;
 }
