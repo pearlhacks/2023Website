@@ -4,19 +4,19 @@
       <rect id="Rectangle_1" data-name="Rectangle 1" width="1193" height="482" transform="translate(657 21)" fill="none"/>
     </clipPath>
     <linearGradient id="linear-gradient" x1="0.447" y1="-0.179" x2="0.553" y2="1.179" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#556b9c"/>
-      <stop offset="0.19" stop-color="#586c9c"/>
-      <stop offset="0.35" stop-color="#63719b"/>
-      <stop offset="0.49" stop-color="#74799a"/>
-      <stop offset="0.63" stop-color="#8c8399"/>
-      <stop offset="0.76" stop-color="#ac9198"/>
-      <stop offset="0.89" stop-color="#d2a296"/>
+      <stop offset="0" stop-color="#34375a"/>
+      <stop offset="0.19" stop-color="#34375a"/>
+      <stop offset="0.35" stop-color="#4c5081"/>
+      <stop offset="0.522" stop-color="#6e76af"/>
+      <stop offset="0.645" stop-color="#7e6f95"/>
+      <stop offset="0.788" stop-color="#f8b394"/>
+      <stop offset="0.882" stop-color="#d6a69a"/>
       <stop offset="1" stop-color="#f8b394"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#34375a" stop-opacity="0.533"/>
-      <stop offset="0.69" stop-color="#141523" stop-opacity="0"/>
-      <stop offset="1" stop-color="#0a0b12" stop-opacity="0.533"/>
+      <stop offset="0" stop-color="#34375a"/>
+      <stop offset="0.69" stop-color="#34375a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#34375a" stop-opacity="0.533"/>
     </linearGradient>
   </defs>
   <g id="Scroll_Group_2" data-name="Scroll Group 2" transform="translate(-657 -21)" clip-path="url(#clip-path)" style="isolation: isolate">
@@ -36,7 +36,7 @@
         <circle id="Ellipse_13" data-name="Ellipse 13" cx="4.5" cy="4.5" r="4.5" transform="translate(1525.96 766.67)" fill="#b9cdff" stroke="#b9cdff" stroke-miterlimit="10" stroke-width="1"/>
         <circle id="Ellipse_14" data-name="Ellipse 14" cx="4.5" cy="4.5" r="4.5" transform="translate(1272.96 776.67)" fill="#b9cdff" stroke="#b9cdff" stroke-miterlimit="10" stroke-width="1"/>
       </g>
-      <path id="Rectangle_13" data-name="Rectangle 13" d="M0,0H1574V707H0Z" transform="translate(433.46 27.17)" fill="url(#linear-gradient-2)"/>
+      <path id="Rectangle_13" data-name="Rectangle 13" d="M1574,707h0Z" transform="translate(433.46 27.17)" fill="url(#linear-gradient-2)"/>
       <g id="Layer_12" data-name="Layer 12">
         <g id="Group_69" data-name="Group 69">
           <g id="clouds_2" data-name="clouds 2">
@@ -73,8 +73,8 @@
           </g>
         </g>
       </g>
-      <path id="Path_268" data-name="Path 268" d="M565.277,212.729a10.834,10.834,0,0,0,4.5,2.635,7.511,7.511,0,0,0-3.175,1.479,7.16,7.16,0,0,0-1.027,1.013,5.869,5.869,0,0,0-.914,1.081,7.458,7.458,0,0,0-1.2,3.567,11.065,11.065,0,0,0-1.772-3.7,10.844,10.844,0,0,0-.877-1.034,10.144,10.144,0,0,0-1.212-1.07,9.172,9.172,0,0,0-3.287-1.56,9.687,9.687,0,0,0,3.043-1.493,9.5,9.5,0,0,0,1.165-1,8.369,8.369,0,0,0,2.11-4.648,11.37,11.37,0,0,0,2.649,4.729Z" transform="translate(1065.097 -6.864)" fill="#afe6ff" stroke="#afe6ff" stroke-miterlimit="10" stroke-width="1"/>
-      <path id="Path_270" data-name="Path 270" d="M565.277,212.729a10.834,10.834,0,0,0,4.5,2.635,7.511,7.511,0,0,0-3.175,1.479,7.16,7.16,0,0,0-1.027,1.013,5.869,5.869,0,0,0-.914,1.081,7.458,7.458,0,0,0-1.2,3.567,11.065,11.065,0,0,0-1.772-3.7,10.844,10.844,0,0,0-.877-1.034,10.144,10.144,0,0,0-1.212-1.07,9.172,9.172,0,0,0-3.287-1.56,9.687,9.687,0,0,0,3.043-1.493,9.5,9.5,0,0,0,1.165-1,8.369,8.369,0,0,0,2.11-4.648,11.37,11.37,0,0,0,2.649,4.729Z" transform="translate(971.097 309.136)" fill="#afe6ff" stroke="#afe6ff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_268" data-name="Path 268" d="M565.277,212.729a10.834,10.834,0,0,0,4.5,2.635,7.511,7.511,0,0,0-3.175,1.479,7.164,7.164,0,0,0-1.027,1.013,5.867,5.867,0,0,0-.914,1.081,7.458,7.458,0,0,0-1.2,3.567,11.067,11.067,0,0,0-1.772-3.7,10.831,10.831,0,0,0-.877-1.034,10.142,10.142,0,0,0-1.212-1.07,9.172,9.172,0,0,0-3.287-1.56,9.687,9.687,0,0,0,3.043-1.493,9.5,9.5,0,0,0,1.165-1,8.369,8.369,0,0,0,2.11-4.648,11.37,11.37,0,0,0,2.649,4.729Z" transform="translate(1065.097 -6.864)" fill="#afe6ff" stroke="#afe6ff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_270" data-name="Path 270" d="M565.277,212.729a10.834,10.834,0,0,0,4.5,2.635,7.511,7.511,0,0,0-3.175,1.479,7.164,7.164,0,0,0-1.027,1.013,5.867,5.867,0,0,0-.914,1.081,7.458,7.458,0,0,0-1.2,3.567,11.067,11.067,0,0,0-1.772-3.7,10.831,10.831,0,0,0-.877-1.034,10.142,10.142,0,0,0-1.212-1.07,9.172,9.172,0,0,0-3.287-1.56,9.687,9.687,0,0,0,3.043-1.493,9.5,9.5,0,0,0,1.165-1,8.369,8.369,0,0,0,2.11-4.648,11.37,11.37,0,0,0,2.649,4.729Z" transform="translate(971.097 309.136)" fill="#afe6ff" stroke="#afe6ff" stroke-miterlimit="10" stroke-width="1"/>
     </g>
   </g>
 </svg>

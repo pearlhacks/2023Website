@@ -1,7 +1,8 @@
-let link = 'https://script.google.com/macros/s/AKfycbxLyjCzLzQKkUBHOtDzVnAs8pGozwicf4cWY98v2SL9AqE7WvWKvQbocmylHz5dQuzgaA/exec'
+let link = 'https://script.google.com/macros/s/AKfycbxLyjCzLzQKkUBHOtDzVnAs8pGozwicf4cWY98v2SL9AqE7WvWKvQbocmylHz5dQuzgaA/exec';
+let linkupdated = "https://script.google.com/macros/s/AKfycbyyaswvdrgilsmSi0_nLCqLul2_A9xVy3VCKnSALIR4HeRwmNsJhDcDUZonZS2FXhb64Q/exec";
 async function getSponsor() {
 
-    let res = await axios.get(link);
+    let res = await axios.get(linkupdated);
 
     let data = res.data.GoogleSheetData;
     let sponsor = [];
@@ -30,18 +31,18 @@ async function getSponsor() {
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         } else if(tier[s] === "Gold"){
-            gold += `<div class='col-12 col-lg-4 gold p-3'>
+            gold += `<div class='col-12 col-lg-4 gold p-2'>
                         <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         }
          else if(tier[s] === "Silver"){
-            silver += `<div class='col-12 col-lg-3 silver p-3'>
+            silver += `<div class='col-6 col-lg-3 silver p-3'>
                         <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`
         } else{
-            custom +=  `<div class='col-12 col-lg-2 custom p-3'>
+            custom +=  `<div class='col-4 col-lg-2 custom p-2'>
                         <a href="${site[s]}" target='_blank' rel="noopener">
                         <img src='${image[s]}' class='img-fluid' alt='${sponsor[s]}'>
                         </a></div>`

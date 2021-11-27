@@ -19,7 +19,7 @@ async function makeGetRequest() {
     for(let ppl= 0; ppl < names.length; ppl++){
         html += 
         `<div class='text-center d-flex flex-column justify-content-start align-items-center align-content-center px-2'>
-            <div style="background: url('${pic[ppl]}');" class='headshot rounded-circle m-3'>
+            <div style="background: url('${pic[ppl]}') center;" class='headshot rounded-circle m-3'>
             </div>
             <h3 class='m-0'>
             ${names[ppl]}
