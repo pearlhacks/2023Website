@@ -6,7 +6,10 @@
     <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-150933241-1');
     </script>
@@ -28,16 +31,20 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
         integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
     <link rel='stylesheet' href='assets/styles.css'>
+    <link rel='stylesheet' href='assets/events.css'>
+
+
+    
 
     <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
     </script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
-        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
-        crossorigin='anonymous'></script>
+        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'>
+        </script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
-        crossorigin='anonymous'></script>
+        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'>
+        </script>
     <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
 
     <!-- Custom Scripts -->
@@ -46,9 +53,9 @@
             $('body>footer').load('./components/footer.html');
             $('body>header').load('./components/navbar.html');
             var scroll_pos = 0;
-            $(document).scroll(function() {
+            $(document).scroll(function () {
                 scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 100) {
+                if (scroll_pos > 100) {
                     $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
                 } else {
                     $('.navbar').css('box-shadow', 'none');
@@ -56,49 +63,24 @@
             });
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Announcements | Pearl Hacks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+        integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='assets/scripts/events.js'></script>
+    <title>Events | Pearl Hacks</title>
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <main id = "schedule">
+    <header></header>
+    <main id="resourcepage">
         <div id="decoration1">
             <header class="py-0 m-0">
-            <h1 style = "background: var(--darkblue); color: var(--lightblue)" class="py-3 m-0">Announcements</h1>
+            <h1 style = "background: var(--darkblue); color: var(--lightblue)" class="py-3 m-0">Social Events</h1>
           </header>
           </div>
-          <section class="container py-4" id ="aboutus" style="max-width: 52rem; margin: 0 auto;">
-            <article class = "p-5 mb-4" style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
-            <h2 class="pb-3 mx-1">Registration</h2>
-            <p class = "mx-1">Registration is NOW OPEN for our 2022 hybrid hackathon! #DiscoverWithPearlHacks virtually or in-person for a weekend of empowerment, creativity, and fun! Students of ALL skill levels are encouraged to participate! <br> Registration is limited to women and non-binary students, however ANYONE can be a mentor!</p>
-            <a
-            class="btn btn-main mx-1 mt-2"
-            href="https://form.typeform.com/to/vGGxFDzC"
-            target="new"
-            role="button"
-            >Hackers</a>
-            <a
-            class="btn btn-main mx-1 mt-2"
-            href="https://form.typeform.com/to/FLAYeimQ"
-            target="new"
-            role="button"
-            >Mentors</a>
-            <a
-            class="btn btn-main mx-1 mt-2"
-            href="https://form.typeform.com/to/v5SN3ZqY"
-            target="new"
-            role="button"
-            >Volunteers</a>
-            
-        </article>
-        <article class = "p-5" style="background-color: aliceblue; box-shadow: 0 0.25rem 1rem -0.5rem rgba(0, 0, 0, 0.4);">
-            <h2 class = "pb-3 mx-1">Schedule</h2>
-            <p class="mx-1">More details regarding scheduling coming soon!</p>
-            </article>
-          </section>
+          <div class='container pb-4'>
+            <div id = "events" class="event-container"></div>
+        </div>
 
     </main>
     <footer>

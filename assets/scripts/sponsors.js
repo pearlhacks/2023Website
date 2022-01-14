@@ -1,8 +1,7 @@
 let link = 'https://script.google.com/macros/s/AKfycbxLyjCzLzQKkUBHOtDzVnAs8pGozwicf4cWY98v2SL9AqE7WvWKvQbocmylHz5dQuzgaA/exec';
-let linkupdated = "https://script.google.com/macros/s/AKfycbyyaswvdrgilsmSi0_nLCqLul2_A9xVy3VCKnSALIR4HeRwmNsJhDcDUZonZS2FXhb64Q/exec";
 async function getSponsor() {
 
-    let res = await axios.get(linkupdated);
+    let res = await axios.get(link);
 
     let data = res.data.GoogleSheetData;
     let sponsor = [];

@@ -3,6 +3,8 @@ $(document).ready(function () {
     $("body>header").load("./components/navbar.html");
     $("navbar").addClass("transparent-nav");
     $("dropdown-menu").addClass("transparent-nav");
+    $(".navbar-nav").addClass("nav-background");
+  
   });
   let scroll_pos = 0;
   const vh = Math.max(
@@ -11,6 +13,15 @@ $(document).ready(function () {
   );
   $(document).scroll(function () {
     scroll_pos = $(this).scrollTop();
+    //if(document.documentElement.clientHeight > 100){
+    //  $(".navbar-nav").css("background", "#586c9b")
+    //}
+    if(window.pageYOffset < 100){
+      $(".navbar-nav").addClass("nav-background");
+    }
+    if(window.pageYOffset > 100){
+      $(".navbar-nav").removeClass("nav-background");
+    }
     if (scroll_pos > vh - 100) {
       $(".navbar").css("box-shadow", "0px 2px 3px rgb(0,0,0,.3)");
       $(".navbar").removeClass("transparent-nav");
@@ -19,6 +30,5 @@ $(document).ready(function () {
       $(".navbar").css("box-shadow", "none");
       $(".navbar").addClass("transparent-nav");
       $(".dropdown-menu").addClass("transparent-nav");
-
     }
   });
