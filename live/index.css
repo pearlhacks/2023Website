@@ -252,8 +252,8 @@ html {
     .ws-inner{display: flex; justify-content: flex-start; flex-direction: column}
 }
 .accordion-container .d-flex.row{border-bottom: 1px solid white; margin:1rem 0.5rem}
-  #prizes{background-color: var(--lightblue); color: var(--midblue);}
-  #prizes h1{color: var(--darkblue);}
+  #prizes{color: white;}
+  #prizes h1{color: var(--lightblue);}
   
   .prizes-container {
       flex:1 0 auto;
