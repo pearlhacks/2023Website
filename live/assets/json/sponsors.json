@@ -1,0 +1,29 @@
+{
+    "GoogleSheetData": [
+        ["Sponsor Title", "Sponsor Site URL", "Sponsor Image URL", "Sponsor Tier"],
+        ["Bandwidth", "https://www.bandwidth.com/careers/", "https://i.ibb.co/yW44C7S/Bandwidth-1.png", "Gold"],
+        ["Capital One", "https://campus.capitalone.com/", "https://i.ibb.co/84hJJhz/Group-5.png", "Gold"],
+        ["Deutsche Bank", "https://www.deutschebank.co.in/", "https://i.ibb.co/x5Szn11/layer1.png", "Gold"],
+        ["Genesys", "https://www.genesys.com/", "https://i.ibb.co/wgVYhWx/Genesys.png", "Gold"],
+        ["Stellar", "https://stellar.org/", "https://i.ibb.co/vkPfwy1/Stellar-Development-Foundation.png", "Gold"],
+        ["BCG", "https://careers.bcg.com/", "https://i.ibb.co/GCtJ1vp/BCGGamma.png", "Pearl"],
+        ["Google Cloud", "https://cloud.google.com", "https://i.ibb.co/d4Jm7hB/Google-Cloud.png", "Pearl"],
+        ["Appian", "https://appian.com/solutions/covid-19/campus-pass.html", "https://i.ibb.co/Q6y5wnw/Appian.png", "Silver"],
+        ["Atlassian", "https://www.atlassian.com/company/careers", "https://i.ibb.co/s5XRLrR/Atlassian.png", "Silver"],
+        ["Barings", "https://www.barings.com/us/guest/about-us/careers-at-barings", "https://i.ibb.co/QntCSLf/g10.png", "Silver"],
+        ["CapTech", "https://www.captechconsulting.com/", "https://i.ibb.co/mFtFHtZ/CapTech.png", "Silver"],
+        ["Cisco", "https://jobs.cisco.com/", "https://i.ibb.co/pf6HpYG/Cisco.png", "Silver"],
+        ["CoStar Group", "https://www.costargroup.com/", "https://i.ibb.co/7nP2fYn/costar.png", "Silver"],
+        ["Credit Suisse", "https://www.credit-suisse.com/careers/en.html", "https://i.ibb.co/8bBYRFX/Credit-Suisse.png", "Silver"],
+        ["M&T Bank", "https://www3.mtb.com/personal", "https://i.ibb.co/c3fBSwK/m-t.png", "Silver"],
+        ["nCino", "https://www.ncino.com/", "https://i.ibb.co/W27cLkM/nCino.png", "Silver"],
+        ["Optum", "https://optum.com/", "https://i.ibb.co/sJRXvYC/Optum.png", "Silver"],
+        ["Oracle", "https://www.oracle.com/index.html", "https://i.ibb.co/Jr1L2vm/Oracle.png", "Silver"],
+        ["Red Ventures", "https://www.redventures.com/", "https://i.ibb.co/mX7qFnf/Red-Ventures.png", "Silver"],
+        ["Renci", "https://www.renci.org/", "https://i.ibb.co/NYrVm9M/RENCI.png", "Silver"],
+        ["SAS", "https://www.sas.com/en_us/careers.html", "https://i.ibb.co/ckjs3By/SAS.png", "Silver"],
+        ["Sticker Mule", "https://mail.mlh.io/e/c/eyJlbWFpbF9pZCI6IlJOR2dCZ1VBQVg3VXptZ1NKMXNFb0VoXzQ4bHAyQT09IiwiaHJlZiI6Imh0dHBzOi8vdXJsZGVmZW5zZS5jb20vdjMvX19odHRwOi8vaGFja3AuYWMvbWxoLXN0aWNrZXJtdWxlLWhhY2thdGhvbnNfXzshIUlLUnhkd0F2NUJtYXJRIU9GM2RKRjRmQUhKblhDdWg5RzBISnlOdTM0YnVaTkR0RDV2NXRkdVBSZHZnRUYyYUM5NFJfa3UtdlV5eHJGMCQiLCJpbnRlcm5hbCI6ImQxYTAwNjBiODU4MTAxOTY5MzE1IiwibGlua19pZCI6NDQzNH0/5b571dead8b505c22f8098d9e1d80aca54ca2c1619ff978cede1d68d2a013ead", "https://i.ibb.co/HN9CB6z/sticker-mule.png", "Silver"],
+        ["Vanguard", "https://vanguard.com/", "https://i.ibb.co/8m9t7NT/Vanguard.png", "Silver"],
+        ["Willow Tree", "https://willowtreeapps.com/", "https://i.ibb.co/WKVgpPv/Willow-Tree.png", "Silver"]
+    ]
+}

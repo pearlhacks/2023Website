@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150933241-1");
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Cache-control" content="public" />
+    <meta
+      name="description"
+      content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+    />
+    <meta
+      name="google-site-verification"
+      content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/ph-favicon.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/ph-favicon.png"
+      type="image/png"
+    />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54e7e1ecc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+    <script src="./assets/js/ws.js"></script>
+    <script src="./assets/js/sponsors.js"></script>
+
+    <style>
+      /* MLH BADGE */
+      #mlh-badge {
+        position: fixed;
+        top: 0;
+        width: 90px !important;
+        right: 10px;
+        z-index: 1031;
+      }
+      #space {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      section {
+        z-index: 1;
+      }
+    </style>
+    <script>
+      let header = document.getElementById("navbar-nav");
+      let btns = header.getElementsByClassName("nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          let current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <title>Pearl Hacks</title>
+  </head>
+
+  <body>
+    <header>
+      <a
+        id="mlh-badge"
+        href="https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white"
+        target="new"
+        name="mlh badge"
+      >
+        <img
+          src="./../assets/images/mlh-badge-2022.svg"
+          class="d-none d-sm-inline"
+          alt="MLH Badge"
+        />
+      </a>
+      <nav
+        class="navbar navbar-expand-lg fixed-top transparent-nav"
+        style="z-index: 1"
+      >
+        <a
+          class="navbar-brand d-flex align-items-center align-content-center"
+          href="../index.html"
+        >
+          <img
+            class="mr-2"
+            src="./../assets/images/phlogo.svg"
+            width="30"
+            height="30"
+            alt="Pearl Hacks Logo"
+          />
+          <span style="font-weight: bold"><b>Pearl Hacks</b> Live</span>
+        </a>
+        <button
+          class="navbar-toggler m-0 mr-sm-5 pr-sm-5"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-dropdown"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-dropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#resources">Resources</a></li>
+            <li class="nav-item"><a href="#schedule">Schedule</a></li>
+            <li class="nav-item"><a href="#prizes">Prizes</a></li>
+            <li class="nav-item"><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--canvas id="space"></canvas-->
+      <section id="home">
+        <div class="container">
+          <div
+            class="d-flex align-items-center justify-content-around flex-column"
+          >
+            <h1 class="text-center">Pearl Hacks 2022 <br />Is Now Live!</h1>
+
+            <div id="clock" class="mb-5 text-white">
+              <div>
+                <p class="display" id="d">00:</p>
+                <p class="divider">:</p>
+                <p class="display" id="h">00:</p>
+                <p class="divider">:</p>
+                <p class="display" id="m">00:</p>
+                <p class="divider">:</p>
+                <p class="display" id="s">00</p>
+              </div>
+              <p class="label">d</p>
+              <p class="divider"></p>
+              <p class="label">h</p>
+              <p class="divider"></p>
+              <p class="label">m</p>
+              <p class="divider"></p>
+              <p class="label">s</p>
+              <br />
+              <br />
+              <p>UNTIL HACKING ENDS!</p>
+            </div>
+            <div>
+              <a href="#">Discord</a><a href="#">Hopin</a
+              ><a href="#">Devpost</a>
+            </div>
+            <!--img
+                id="animate-left"
+                src="../assets/images/main_graphic.svg"
+                alt="pearl hacks mascot"
+              /-->
+          </div>
+          <i
+            class="fa fa-angle-down text-center"
+            onclick="scrollToContent();"
+            id="down-indicator"
+          ></i>
+        </div>
+      </section>
+      <section id="resources">
+        <h1 class="text-center">RESOURCES</h1>
+        <div class="container my-5">
+    
+          <div class="resource-grid">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="r1">
+                <h2>Discord</h2>
+                <div>
+                  <p>
+                    Discord will our primary method of communication during this
+                    event for all attendees (in-person and virtual). Mentors
+                    will also be using a Discord bot to help hackers!
+                    <br />Discord Server:
+                    <a href="https://bit.ly/PHDiscord22" target="_blank"
+                      >bit.ly/PHDiscord22</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="r1">
+                <h2>Hopin</h2>
+                <div>
+                  <p>
+                    Pearl Hacks virtual events will operate on Hopin. To access all events at Pearl Hacks (including
+                    opening and closing), as well as workshops and the sponsor
+                    fair you must make an account on the Pearl Hacks Hopin page!
+                    Please make sure to make an account with the same email
+                    address that you used to sign up for Pearl Hacks on
+                    TypeForm!<br />Hopin Page:
+                    <a href="https://bit.ly/PHHopin22" target="_blank"
+                      >bit.ly/PHHopin22</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2>Useful Links</h2>
+            <div class="d-flex flex-row">
+              <div>
+                <p>
+                  To be able to access all events at Pearl Hacks (including
+                  opening and closing), as well as workshops and the sponsor
+                  fair you must make an account on the Pearl Hacks Hopin page!
+                  This is the platform we will be using for hosting Pearl Hacks.
+                  All participants AND mentors must make an account! Please make
+                  sure to make an account with the same email address that you
+                  used to sign up for Pearl Hacks on TypeForm! Click this link
+                  to get to our Hopin page: bit.ly/PHHopin22
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.pearlhacks.com/resources.html"
+                      target="_blank"
+                      >Resources</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pearlhacks.com/faq.html"
+                      target="_blank"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.notion.so/uncph/Pearl-Hacks-Hacker-Guide-2022-531155aee9a44ab68fcd11c47f5fc26f"
+                      target="_blank"
+                      >Hacker Guide</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>
+                  To be able to access all events at Pearl Hacks (including
+                  opening and closing), as well as workshops and the sponsor
+                  fair you must make an account on the Pearl Hacks Hopin page!
+                  This is the platform we will be using for hosting Pearl Hacks.
+                  All participants AND mentors must make an account! Please make
+                  sure to make an account with the same email address that you
+                  used to sign up for Pearl Hacks on TypeForm! Click this link
+                  to get to our Hopin page: bit.ly/PHHopin22
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="schedule">
+        <h1 class="text-center">SCHEDULE</h1>
+        <div class="container">
+          <div class="my-5">
+            <div class="tabs-container d-flex row align-items-center">
+              <h2>Event Schedule</h2>
+              <ul id="tabs-nav" class="row d-flex justify-content-end m-0 mb-3">
+                <li><a href="#tab1">Friday</a></li>
+                <li><a href="#tab2">Saturday</a></li>
+                <li><a href="#tab3">Sunday</a></li>
+              </ul>
+            </div>
+            <!-- END tabs-nav -->
+            <div id="tabs-content">
+              <table class="u-full-width schedule-item tab-content" id="tab1">
+                <thead>
+                  <tr>
+                    <th class="schedule-item">Time (EST)</th>
+                    <th class="schedule-item">Event</th>
+                    <th class="schedule-item">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="schedule-item">Feb 18<br />7pm-8pm</td>
+                    <td class="schedule-item">Hack101</td>
+                    <td class="link schedule-item">
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 18<br />8:30pm-10:30pm</td>
+                    <td class="schedule-item">
+                      Virtual Bonding Event: PPT Night!
+                    </td>
+                    <td class="link schedule-item">
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="u-full-width schedule-item tab-content" id="tab2">
+                <thead>
+                  <tr>
+                    <th class="schedule-item">Time (EST)</th>
+                    <th class="schedule-item">Event</th>
+                    <th class="schedule-item">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />9:00am</td>
+                    <td class="schedule-item">Check-in (In-person)</td>
+                    <td class="schedule-item">Great Hall Lobby</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />10am-11am</td>
+                    <td class="schedule-item">Opening Ceremony</td>
+                    <td class="link schedule-item">
+                      3206, 3408 <br />
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Stage <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />11:00am</td>
+                    <td class="schedule-item">Hacking Begins!</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />11am-12pm</td>
+                    <td class="schedule-item">Sponsorship Fair (In-person)</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />11am-1pm</td>
+                    <td class="schedule-item">Sponsorship Fair (Virtual)</td>
+                    <td class="link schedule-item">
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Booth <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />11:30am-12pm</td>
+                    <td class="schedule-item">
+                      Speed Dating (Team-forming event)
+                    </td>
+                    <td class="link schedule-item">
+                      3206 <br />
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Networking
+                        <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />12pm-2pm</td>
+                    <td class="schedule-item">Lunch (In-person)</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />2pm-8pm</td>
+                    <td class="schedule-item">Workshops</td>
+                    <td class="schedule-item">Hybrid</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />6pm-8pm</td>
+                    <td class="schedule-item">Dinner (In-person)</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />8pm-9pm</td>
+                    <td class="schedule-item">BobaXPearls (In-person)</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />9pm-11pm</td>
+                    <td class="schedule-item">Decompression night</td>
+                    <td class="link schedule-item">
+                      3206A/B <br /><a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Booth
+                        <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 19<br />10pm-11pm</td>
+                    <td class="schedule-item">Late night snack (In-person)</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="u-full-width schedule-item tab-content" id="tab3">
+                <thead>
+                  <tr>
+                    <th class="schedule-item">Time (EST)</th>
+                    <th class="schedule-item">Event</th>
+                    <th class="schedule-item">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />8:30am-10am</td>
+                    <td class="schedule-item">Breakfast</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />11:00am</td>
+                    <td class="schedule-item">Submit Project Deadline</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />11am-2pm</td>
+                    <td class="schedule-item">Lunch</td>
+                    <td class="schedule-item">Great Hall</td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />12pm-12:30pm</td>
+                    <td class="schedule-item">Judging Meeting</td>
+                    <td class="schedule-item link">
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Sessions <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />12:30pm-3pm</td>
+                    <td class="schedule-item">Demo Fair</td>
+                    <td class="schedule-item link">
+                      <a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        >Hopin Booths <span>(Virtual)</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-item">Feb 20 <br />3:30pm-4:30pm</td>
+                    <td class="schedule-item">Closing Ceremony Stream</td>
+                    <td class="schedule-item link">
+                      3206, 3408 <br /><a
+                        href="https://hopin.com/events/pearl-hacks-2022"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="schedule-item"
+                        ><span>Hopin Stage</span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ws-container mt-4" id="ws">
+              <h2>Workshop Schedule</h2>
+
+              <div class="d-flex col-xs-12 ws-header mt-4 py-3">
+                <div class="col-lg-2 text-center">Time (EST)</div>
+                <div class="col-6 text-center">Title</div>
+                <div class="col-lg-2 text-center">Host</div>
+                <div class="col-lg-2 text-center">Location</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="prizes" class="py-4">
+        <div class="container">
+          <h1 class="text-center">PRIZES</h1>
+          <p class="text-center">
+            Check out the prizes for our Pearl Hacks winners
+          </p>
+          <h2>Awarded by Pearl Hacks</h2>
+          <div class="container row d-flex justify-content-between">
+            <div class="card p-3">
+              <i class="fas fa-paint-brush"></i>
+              <h1>1st Place</h1>
+              <p>This is the first card.</p>
+            </div>
+            <div class="card p-3">
+              <i class="fas fa-paint-brush"></i>
+              <h1>2nd Place</h1>
+              <p>This is the first card.</p>
+            </div>
+            <div class="card p-3">
+              <i class="fas fa-paint-brush"></i>
+              <h1>3rd Place</h1>
+              <p>This is the first card.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <div class="container my-5">
+          <h1 class="text-center" style="color: var(--lightblue)">SPONSORS</h1>
+          <div
+            id="sponsorsinfo"
+            class="d-flex justify-content-center container"
+            style="text-align: center"
+          ></div>
+        </div>
+      </section>
+      <footer class="row d-flex flex-column justify-content-center">
+        <ul class="d-flex flex-row justify-content-center flex-wrap p-0 col-12">
+          <li>
+            <a href="https://www.facebook.com/pearlhackathon/" target="blank">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/PearlHacks" target="blank">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:questions@pearlhacks.com" target="blank">
+              <i class="far fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/pearlhacks/" target="blank">
+              <i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/pearlhacks" target="blank">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      $("#tabs-nav li:first-child").addClass("active");
+      $(".tab-content").hide();
+      $(".tab-content:first").show();
+
+      // Click function
+      $("#tabs-nav li").click(function () {
+        $("#tabs-nav li").removeClass("active");
+        $(this).addClass("active");
+        $(".tab-content").hide();
+
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+      });
+    </script>
+  </body>
+</html>
