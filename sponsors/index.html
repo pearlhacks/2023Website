@@ -33,9 +33,16 @@
       name="google-site-verification"
       content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
     />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./../assets/styles.css" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link rel="icon" href="./../assets/images/ph-favicon.png" type="image/png" />
     <link
       rel="shortcut icon"
       href="assets/images/ph-favicon.png"
@@ -49,16 +56,30 @@
 body {
 	background-image: url('./../assets/images/background.svg');
 	background-attachment: fixed;
-	color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Proxima Nova';
+}
+p{
+    font-size: 1rem;
+    margin: 0 auto;
 }
 
+button{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--light);
+    color: var(--darkblue);
+    border-style: none !important;
+}
 .box {
 	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	background: aliceblue;
+    margin: auto; padding: 2rem 4rem;
 }
 
 .lightbox {
-	zoom: 1.5;
+	zoom: 1.25;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -84,28 +105,65 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+   color: var(--darkblue);
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: #955;
-   text-align: center;
+    color: var(--darkblue);   text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: #955;
-   text-align: center;
+    color: var(--darkblue);   text-align: center;
+}
+#sponsor-page {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1031;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 </style>
 
 <body>
+    <header>
+        <a
+        id='sponsor-page'
+        href="./../index.html"
+        class="navbar-brand d-flex align-items-center align-content-center"
 
+      >
+        <img
+        
+          class="mr-2"
+          src="./../assets/images/phlogo.svg"
+          width="30"
+          height="30"
+          alt="Pearl Hacks Logo"
+        />
+        <span style="font-weight: bold; color: white;">Pearl Hacks 2022</span>
+      </a>
+        <a
+          id="mlh-badge"
+          href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+          target="new"
+        >
+          <img
+            src="./../assets/images/mlh-badge-2022.svg"
+            class="d-none d-sm-inline"
+            alt="MLH Badge"
+          />
+        </a>
+      </header>
 	<div id="loginbox" class="lightbox" >
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
+                    <h2>PH2022 Resume Database</h2>
+                    <p>Please refer to email for password</p>
 					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">wrong password</p>
@@ -113,8 +171,6 @@ div.vertical {
 			</div>
 		</div>
 	</div>
-
-
 
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"

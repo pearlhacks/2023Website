@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150933241-1");
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Cache-control" content="public" />
+    <meta
+      name="description"
+      content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+    />
+    <meta
+      name="google-site-verification"
+      content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/ph-favicon.png"
+      type="image/png"
+    />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/schedule.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54e7e1ecc6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Scripts -->
+    <script>
+      $(document).ready(function () {
+        $("body>footer").load("./components/footer.html");
+        $("body>header").load("./components/navbar.html");
+      });
+
+      // Show the first tab and hide the rest
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+      integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/scripts/workshop.js"></script>
+    <title>Workshops | Pearl Hacks</title>
+  </head>
+
+  <body style="background-color: aliceblue">
+    <header></header>
+    <main id="workshoppage">
+      <div id="decoration1">
+        <header class="py-0 m-0">
+          <h1
+            style="background-color: var(--darkblue); color: var(--lightblue)"
+            class="py-3 m-0"
+          >
+            Workshop Schedule
+          </h1>
+        </header>
+      </div>
+      <div class="text-center container my-5">
+        <p>Check out our <a href="https://www.notion.so/Pearl-Hacks-Hacker-Guide-2022-531155aee9a44ab68fcd11c47f5fc26f">Pearl Hacks 2022 Hacker Guide</a> for more information!</p>
+        <div style="overflow-x: auto" class="mt-5">
+          <table class="table workshop mb-0">
+            <tbody id="workshop-content">
+              <tr class="header-row">
+                <th>
+                  <h3>Time</h3>
+                </th>
+                <th>
+                  <h3>Workshop</h3>
+                </th>
+                <th>
+                  <h3>Room</h3>
+                </th>
+                <th>
+                  <h3>Host</h3>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+       
+    </div>
+      <!--
+                <tr>
+                    <td>1:15-2:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop1" role="button" aria-expanded="false" aria-controls="workshop1">
+                            Becoming a Git Wizard
+                        </span>
+                        <div class="collapse" id="workshop1" style="">
+                            Just like Harry Potter quickly studied up on just a couple key spells, we will study a
+                            few key pieces of git so you too can be a git wizard! We will introduce the essential
+                            concepts of git via a GUI (commits, branches, merges, and merge conflicts) and explore
+                            their use in a collaborative environment (GitHub).
+                        </div>
+                    </td>
+                    <td>3408</td>
+                    <td>D. Ben Knoble</td>
+                </tr>
+                <tr>
+                    <td>1:15-2:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop2" role="button" aria-expanded="false" aria-controls="workshop2">
+                            Coding 101: Learn to Code with Swift
+                        </span>
+                        <div class="collapse" id="workshop2">
+                            Ever wonder what it is like to build an iOS app? This class we will be giving you the
+                            tools necessary to build your first app using the Swift coding language. We will go over
+                            coding basics including variables, arrays, conditional logic, and loops using Xcode
+                            playgrounds. By the end of the hour workshop, you will have the foundation needed to
+                            build your first iOS app.
+                        </div>
+                    </td>
+                    <td>3206A/B</td>
+                    <td>Twitter</td>
+                </tr>
+                <tr>
+                    <td>1:15-2:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop3" role="button" aria-expanded="false" aria-controls="workshop3">
+                            Intro to Web Apps
+                        </span>
+                        <div class="collapse" id="workshop3">
+                            Build a complete web app with Java + Spring Boot + Angular. In this workshop we will
+                            create a very simple but complete web application from scratch, all the way from the
+                            "backend" to the "frontend". This workshop should get you all setup to start any other
+                            web application you are thinking to build at the hackathon. It will also give you a very
+                            good idea of what the job market approach is in regards to build enterprise web
+                            applications.
+                        </div>
+                    </td>
+                    <td>3205</td>
+                    <td>CapTech</td>
+                </tr>
+                <tr>
+                    <td>1:15-2:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop4" role="button" aria-expanded="false" aria-controls="workshop4">
+                            Things your Commencement Speaker Doesn't Tell You...Insights from a Technology Industry
+                            Analyst
+                        </span>
+                        <div class="collapse" id="workshop4">
+                            Graduation speeches are full of quotes like "choose a job you love and you'll never work
+                            a day in your life" and "chase your passion and money will come." The people who say
+                            these things are well intended, but let's be honest:
+
+                            those are largely unhelpful phrases that mean very little when you're starting your
+                            career.
+
+                            Let's talk about career advice that is actionable and meaningful. What are some
+                            productive approaches to shaping your career path in your teens and twenties? What skill
+                            sets do employers care about most? What should you expect in a job interview? How do you
+                            find your passion anyway?
+
+                            All this and more, plus a gif on every slide.
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>Genesys</td>
+                </tr>
+                <tr>
+                    <td>2:30-3:30</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop5" role="button" aria-expanded="false" aria-controls="workshop5">
+                            Intro to Storytelling and Text Adventures
+                        </span>
+                        <div class="collapse" id="workshop5">
+                            Do you want to become a storyteller and/or the creator of your very own video game? Look
+                            no further, this fun workshop will teach you both! We'll use Twine software to create a
+                            web-based video game (no prior experience/knowledge required).
+                        </div>
+                    </td>
+                    <td>3408</td>
+                    <td>Mary Gibeau</td>
+                </tr>
+                <tr>
+                    <td>2:30-3:30</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop6" role="button" aria-expanded="false" aria-controls="workshop6">
+                            Three Powerful Google Cloud Products for Your Project
+                        </span>
+                        <div class="collapse" id="workshop6">
+                            Chat about Google Cloud computing and Google Cloud Platform, this talk highlights App
+                            Engine, Machine Learning APIs, and Cloud Firestore. For each product, there are
+                            interactive demos and example use cases.
+                        </div>
+                    </td>
+                    <td>3206A/B</td>
+                    <td>Google</td>
+                </tr>
+                <tr>
+                    <td>2:30-3:30</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop7" role="button" aria-expanded="false" aria-controls="workshop7">
+                            Automated UI Testing with Cucumber, Protractor, and Chai
+                        </span>
+                        <div class="collapse" id="workshop7">
+                            So, you’ve developed an application. You’re happy with it, everything is working fine,
+                            and you want to make sure the functionality you’ve developed will always work, no matter
+                            what additional features are added in the future. Option A – manually testing. Every
+                            time you add new code, take hours and hours to click around and make sure everything
+                            still works as before. Option B – automated testing. Write some code that, at the push
+                            of a button, can simulate a human interacting with your application to perform the same
+                            tests as option A while you spend your time elsewhere. Which option would you choose?
+
+                            If Option B, then this is the workshop for you. Using Cucumber, Protractor, and Chai, we
+                            will enforce the process of Behavior Driven Development to help you optimize your
+                            development process.
+                        </div>
+                    </td>
+                    <td>3205</td>
+                    <td>Deutsche Bank</td>
+                </tr>
+                <tr>
+                    <td>2:30-3:30</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop8" role="button" aria-expanded="false" aria-controls="workshop8">
+                            Android 101
+                        </span>
+                        <div class="collapse" id="workshop8">
+                            Over 2 billion devices run Android as of May. 2018
+                            Available on smartwatches, tablets, phones, cars, and TVs
+                            As of December 2018, there are 2.6 million Android apps in the Google Play Store
+                            The goals of this workshop are to become familiar with Android, learn how to setup an
+                            Android Project and know how to Google/Stackoverflow
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>Capital One</td>
+                </tr>
+                <tr>
+                    <td>3:45-4:45</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop9" role="button" aria-expanded="false" aria-controls="workshop9">
+                            Introduction to Web Development
+                        </span>
+                        <div class="collapse" id="workshop9">
+                            A high-level overview of some of the fundamental technologies used for creating web
+                            pages, including HTML, CSS, and CSS frameworks.
+                        </div>
+                    </td>
+                    <td>3407</td>
+                    <td>Tasnia Sarwar</td>
+                </tr>
+                <tr>
+                    <td>3:45-4:45</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop10" role="button" aria-expanded="false" aria-controls="workshop10">
+                            Chatbots, Node-Red &amp; Watson API's, Oh My!
+                        </span>
+                        <div class="collapse" id="workshop10">
+                            I will be giving an overview of building a basic chatbot, how to run on node-Red and
+                            integrating Watson APIs into a project. What's an API and how do I use it? How can I
+                            build my own custom chatbot? What even is node-Red, and is it really red? These are the
+                            kinds of topics I'll be covering and demonstrating how to use them and integrate them
+                            into their project while they hack away.
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>IBM</td>
+                </tr>
+                <tr>
+                    <td>3:45-4:45</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop11" role="button" aria-expanded="false" aria-controls="workshop11">
+                            Perspective API - effectively create harassment interventions
+                        </span>
+                        <div class="collapse" id="workshop11">
+                            Ensure fewer people are silenced and more people are able to safely engage in good faith discussions online, globally
+                            <br>
+                            Enable platforms to effectively create harassment interventions that reach more end-users through an openly accessible API that scores the impact of text.
+                        </div>
+                    </td>
+                    <td>3206A/B</td>
+                    <td>Google</td>
+                </tr>
+                <tr>
+                    <td>5:00-6:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop12" role="button" aria-expanded="false" aria-controls="workshop12">
+                            Intro to Unity
+                        </span>
+                        <div class="collapse" id="workshop12">
+                            Game engines might seem intimidating but this workshop will break them down with a
+                            little bit of humor and a special celebrity guest. Come learn how to make a game in the
+                            Unity game engine (prior coding experience preferred).
+                        </div>
+                    </td>
+                    <td>3407</td>
+                    <td>Mary Gibeau</td>
+                </tr>
+                <tr>
+                    <td>5:00-6:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop13" role="button" aria-expanded="false" aria-controls="workshop13">
+                            Intro to Data Analysis
+                        </span>
+                        <div class="collapse" id="workshop13">
+                            In this workshop, we’ll start with some data and a question we want to answer. We'll
+                            then take a winding journey though how to answer that question using a variety of tools.
+                            We'll start with the Linux shell and learn some ninja-level data munging tricks. Next
+                            we'll step into the world of big data and explore our data using MapReduce, then Spark,
+                            and finally Hive. When we're done, attendees will have a high level understanding of the
+                            current most popular data analysis tools and some hands-on experience to back it up. All
+                            work will be done on a Docker image that is preloaded with the data and the tools we
+                            will use. All coding will be done in python. Attendees should come with a laptop with
+                            Docker preinstalled and should ideally have the Docker image (templedf/phdata:latest)
+                            pulled.
+                        </div>
+                    </td>
+                    <td>3206A/B</td>
+                    <td>Twitter</td>
+                </tr>
+                <tr>
+                    <td>5:00-6:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop14" role="button" aria-expanded="false" aria-controls="workshop14">
+                            Build an API in Go                              </span>
+                        <div class="collapse" id="workshop14">
+                            Ever wanted to learn how to code in Go? Interested in making an API for your Hackathon
+                            project? We've got you covered - come learn how to build APIs in Go with fellow Gophers!
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>Red Ventures</td>
+                </tr>
+                <tr>
+                    <td>7:00-8:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop15" role="button" aria-expanded="false" aria-controls="workshop15">
+                            How to Train Your NER Classifier
+                        </span>
+                        <div class="collapse" id="workshop15">
+                            An introduction to natural language processing (NLP) and named entity recognition (NER).
+                            We'll talk about how to use and make a NER model!
+                        </div>
+                    </td>
+                    <td>3409</td>
+                    <td>Rachel Yuan</td>
+                </tr>
+                <tr>
+                    <td>7:00-8:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop16" role="button" aria-expanded="false" aria-controls="workshop16">
+                            Paint a Picture: Visualizing Data using Tableau
+                        </span>
+                        <div class="collapse" id="workshop16">
+                            This workshop will walk through how to find and evaluate open datasets and then lead you
+                            through creating several types of data visualizations in the free software Tableau.
+                        </div>
+                    </td>
+                    <td>3407</td>
+                    <td>Claire Cahoon</td>
+                </tr>
+                <tr>
+                    <td>7:00-8:00</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop17" role="button" aria-expanded="false" aria-controls="workshop17">
+                            System Design In The Real World
+                        </span>
+                        <div class="collapse" id="workshop17">
+                            You get the degree. You get the job. Great! Now what? As a part of the Analyst Program
+                            at Wells Fargo we work with interns and full time analysts to make the transition from
+                            getting your code to compile so you can complete your degree to building complex
+                            financial services systems in the real world. In this workshop we’ll work together to
+                            interactively design a system from the ground up. It’s a lot simpler… and a lot harder
+                            than you might think!
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>Wells Fargo</td>
+                </tr>
+                <tr>
+                    <td>8:15-9:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop18" role="button" aria-expanded="false" aria-controls="workshop18">
+                            Internship Panel
+                        </span>
+                        <div class="collapse" id="workshop18">
+                            Join a few of our very own Pearl Hacks Directors in conversation about their internship
+                            expereinces, recruitment season struggles, and advice for navigating the CS field.
+                        </div>
+                    </td>
+                    <td>3408</td>
+                    <td>PH Directors</td>
+                </tr>
+                <tr>
+                    <td>8:15-9:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop19" role="button" aria-expanded="false" aria-controls="workshop19">
+                            Build Your Own Alexa Skill
+                        </span>
+                        <div class="collapse" id="workshop19">
+                            Build an Alexa-hosted skill in minutes! No coding experience necessary. You will learn
+                            how to create an Amazon Developer account, explore the Alexa-hosted skill development
+                            process, and play around with your own skills on a real Amazon Echo device. The Alexa
+                            Skills Kit can be used kickstart new projects without needed to know much (or any) code,
+                            letting you implement amazing ideas fast!
+                        </div>
+                    </td>
+                    <td>3206A/B</td>
+                    <td>nCino</td>
+                </tr>
+                <tr>
+                    <td>8:15-9:15</td>
+                    <td>
+                        <span class="collapser collapsed" data-toggle="collapse" data-target="#workshop20"
+                            class="collapser" role="button" aria-expanded="false" aria-controls="workshop20">
+
+                        </span>
+                        <div class="collapse" id="workshop20">
+
+                        </div>
+                    </td>
+                    <td>3209</td>
+                    <td>Genesys</td>
+                </tr>
+            </tbody>-->
+    </main>
+    <footer></footer>
+  </body>
+</html>

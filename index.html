@@ -59,7 +59,11 @@
     <link rel="stylesheet" href="assets/transparent.css" />
 
     <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -88,7 +92,6 @@
     <script src="assets/scripts/stars.js"></script>
     <script src="assets/scripts/transparentnav.js"></script>
     <script src="assets/scripts/countdown.js"></script>
-    <script src="assets/scripts/headshots.js"></script>
 
     <title>Pearl Hacks</title>
   </head>
@@ -99,6 +102,7 @@
       <!-- JUMBOTRON -->
       <section class="jumbotron bg-white p-0 mb-0">
         <div class="pt-1 p-0 stars-container">
+          <canvas class="m-0 p-0 d-none d-md-inline" id="stars"></canvas>
           <div
             class="
               row
@@ -140,34 +144,44 @@
                   PEARL HACKS
                 </h1>
               </div>
-              <p class="font-weight-bold">
+              <p class="font-weight-bold d-none d-lg-inline">
                 <i
                   class="text-white mr-3 far fa-calendar alt"
                   aria-hidden="true"
                 ></i
                 >Feb. 18 - 20, 2022
               </p>
-              <p class="font-weight-bold">
+              <p class="font-weight-bold d-none d-lg-inline">
                 <i
                   class="text-white mr-3 fas fa-map-marker-alt"
                   aria-hidden="true"
                 ></i
                 >Hybrid event
               </p>
-              <p class="font-weight-bold" style="color: #fff" id="countdown">
+              <p
+                class="font-weight-bold d-none d-lg-inline"
+                style="color: #fff"
+              >
                 <i
-                  class="fas fa-stopwatch text-white mr-2"
+                  class="fas fa-stopwatch text-white mr-3"
                   aria-hidden="true"
-                ></i>
+                ></i>Registration Is Closed!
               </p>
               <p class="pt-3 raise d-none d-lg-inline">
                 <a
                   class="btn btn-main"
-                  href="https://form.typeform.com/to/vGGxFDzC"
-                  target="new"
+                  href="./live/"
+                  target="_blank"
                   role="button"
-                  >Register Now</a
+                  >Enter Live Site</a
                 >
+                <a
+                class="btn btn-main m-1"
+                href="https://bit.ly/PH22COVID"
+                target="new"
+                role="button"
+                >COVID Form</a
+              >
               </p>
             </div>
             <div
@@ -175,6 +189,7 @@
                 d-flex
                 justify-content-center
                 my-lg-4
+                flex-column
                 align-items-center align-content-center
               "
             >
@@ -184,16 +199,47 @@
                 class="mascot"
                 alt="pearl hacks mascot"
               />
+              <p class="font-weight-bold d-lg-none">
+                <i
+                  class="text-white mr-3 far fa-calendar alt"
+                  aria-hidden="true"
+                ></i
+                >Feb. 18 - 20, 2022
+              </p>
+              <p class="font-weight-bold d-lg-none">
+                <i
+                  class="text-white mr-3 fas fa-map-marker-alt"
+                  aria-hidden="true"
+                ></i
+                >Hybrid event
+              </p>
+              <p
+                class="font-weight-bold d-lg-none"
+                style="color: #fff"
+         
+              >
+                <i
+                  class="fas fa-stopwatch text-white mr-3"
+                  aria-hidden="true"
+                ></i>Registration Is Closed!
+              </p>
             </div>
             <div class="col-12 text-center" style="z-index: 20">
               <p class="pt-2 d-lg-none">
                 <a
-                  class="btn btn-main"
-                  href="https://form.typeform.com/to/vGGxFDzC"
-                  target="new"
+                  class="btn btn-main m-1"
+                  href="./live/"
+                  target="_blank"
                   role="button"
-                  >Register Now</a
+                  >Enter Live Site</a
                 >
+                <a
+                class="btn btn-main m-1"
+                href="https://bit.ly/PH22COVID"
+                target="new"
+                role="button"
+                >COVID Form</a
+              >
               </p>
             </div>
             <i
@@ -339,25 +385,34 @@
             alt="wave divider"
           />
         </div>
-        <section
-          class="container-fluid py-3"
-          style="background-color: #d8f0fc"
-        >
+        <section class="container-fluid py-3" style="background-color: #d8f0fc">
           <div id="faq" class="container py-4"></div>
         </section>
-        <div class='container-fluid mb-5'>
-          <div class='row p-0'>
-              <figure class='col-12 col-md-4 p-0 m-0'>
-                  <img src='assets/images/home_capitalone.jpeg' class='p-0 m-0 img-fluid'>
-              </figure>
-              <figure class='col-12 col-md-4 p-0 m-0 d-none d-md-inline'>
-                <img src='assets/images/home_board.jpeg' class='p-0 m-0 img-fluid'>
+        <div class="container-fluid mb-5">
+          <div class="row p-0">
+            <figure class="col-12 col-md-4 p-0 m-0">
+              <img
+                src="assets/images/home_capitalone.jpeg"
+                class="p-0 m-0 img-fluid"
+                alt="workshop"
+              />
             </figure>
-              <figure class='col-12 col-md-4 p-0 m-0'>
-                  <img src='assets/images/home_google.jpeg' class='p-0 m-0 img-fluid'>
-              </figure>
+            <figure class="col-12 col-md-4 p-0 m-0 d-none d-md-inline">
+              <img
+                src="assets/images/home_board.jpeg"
+                class="p-0 m-0 img-fluid"
+                alt="pearl hacks board"
+              />
+            </figure>
+            <figure class="col-12 col-md-4 p-0 m-0">
+              <img
+                src="assets/images/home_google.jpeg"
+                class="p-0 m-0 img-fluid"
+                alt="demo fair"
+              />
+            </figure>
           </div>
-      </div>
+        </div>
         <div class="p-3">
           <div
             class="container p-5 text-center"
@@ -384,7 +439,7 @@
         <div>
           <!-- SPONSORS -->
           <section class="container pb-5 pt-3">
-            <h2 class="py-2 mt-5 text-center">Sponsors</h2>
+            <h2 class="py-2 mt-5 text-center">Our Sponsors</h2>
             <div
               id="sponsorsinfo"
               class="d-flex justify-content-center container"
@@ -396,9 +451,9 @@
     </main>
     <footer></footer>
     <script>
-      window.onload = function() {
+      window.onload = function () {
         $(".navbar-nav").addClass("nav-background");
       };
-      </script>
+    </script>
   </body>
 </html>

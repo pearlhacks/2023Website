@@ -25,7 +25,7 @@ $(document).ready(function () {
                 custom += `<div class='col-4 col-lg-3 custom p-3 my-2'>${sponsorData}`
             }
         }
-
+        
         document.getElementById("sponsorsinfo").innerHTML = html + pearl + closeDiv + gold + closeDiv + silver + closeDiv + custom + closeDiv + closeDiv
     })
 });

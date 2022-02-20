@@ -1,41 +1,3 @@
-var canvas;
-var context;
-var screenH;
-var screenW;
-var stars = [];
-var fps = 60;
-var numStars = 500;
-
-$('document').ready(function () {
-
-	// Calculate the screen size
-	screenH = $(window).height();
-	screenW = $(window).width();
-
-	// Get the canvas
-	canvas = $('#space');
-
-	// Fill out the canvas
-	canvas.attr('height', screenH);
-	canvas.attr('width', screenW);
-	context = canvas[0].getContext('2d');
-
-	// Create all the stars
-	for (var i = 0; i < numStars; i++) {
-		var x = Math.round(Math.random() * screenW);
-		var y = Math.round(Math.random() * screenH);
-		var length = 1 + Math.random() * 1.5;
-		var opacity = Math.random();
-
-		// Create a new star and draw
-		var star = new Star(x, y, length, opacity);
-
-		// Add the the stars array
-		stars.push(star);
-	}
-
-	animateInterval = setInterval(animate, 1000 / fps);
-});
 
 /**
  * Animate the canvas
@@ -260,8 +222,8 @@ function createDiv(height, width) {
 }
 // ]]>
 
-
-var countDownDate = new Date("Februrary 20 2022 11:00:00 EDT").getTime();
+/*
+var countDownDate = new Date("2022-02-20T16:10:00.000Z").getTime();
 var myfunc = setInterval(function () {
 
 
@@ -292,10 +254,10 @@ function pad(num, size) {
 	while (s.length < size) s = "0" + s;
 	return s;
 }
-
+*/
 const scrollToContent = function () {
 	var element = document.getElementById("resources");
-	var headerOffset = 65;
+	var headerOffset = 85;
 	var elementPosition = element.getBoundingClientRect().top;
 	var offsetPosition = elementPosition - headerOffset;
 	window.scrollTo({

@@ -1,7 +1,12 @@
 let link2 = 'https://script.google.com/macros/s/AKfycbz6X5a9OCGCNkFkpW2qpIayQL7HQfC1zYYj5VSPdc2L0o-4G6v5mLoQe0PA_FK_HNxjBQ/exec'
 async function getFAQ() {
 
-    let res = await axios.get(link2);
+    let res = await axios.get(link2,        {
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    });
 
     let data = res.data.GoogleSheetData;
     let beginner = [];
