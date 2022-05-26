@@ -1,0 +1,1 @@
+@media (min-width:992px){.navbar{background-color:var(--darkblue)}.navbar-nav a{color:#fff}.navbar-nav a:hover{color:var(--light)!important;transform:scale(1.01)}.navbar-brand span,.navbar-brand b{font-family:var(--secondary-font)!important;color:#fff}#navbar-dropdown>ul>li.nav-item.dropdown.show>div>a:hover{color:var(--midblue)!important}}

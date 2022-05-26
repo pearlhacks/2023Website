@@ -1,74 +1,147 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang="en">
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-150933241-1'></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-150933241-1');
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150933241-1");
     </script>
 
     <!-- Meta Tags-->
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta http-equiv='Cache-control' content='public'>
-    <meta name='description'
-        content='Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.'>
-    <meta name='google-site-verification' content='BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w' />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Cache-control" content="public" />
+    <meta
+      name="description"
+      content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+    />
+    <meta
+      name="google-site-verification"
+      content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
+    />
 
     <!-- Favicon -->
-    <link rel='icon' href='assets/images/ph-favicon.png' type='image/png' />
-    <link rel='shortcut icon' href='assets/images/ph-favicon.png' type='image/png' />
+    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/ph-favicon.png"
+      type="image/png"
+    />
 
     <!-- CSS (Bootstrap, Custom Styles -->
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
-        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
-    <link rel='stylesheet' href='assets/styles.css'>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/schedule.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
 
     <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
-    </script>
-    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
-        integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
-        crossorigin='anonymous'></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
-        crossorigin='anonymous'></script>
-    <script src='https://kit.fontawesome.com/54e7e1ecc6.js' crossorigin='anonymous'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54e7e1ecc6.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom Scripts -->
     <script>
-        $(document).ready(function () {
-            $('body>footer').load('./components/footer.html');
-            $('body>header').load('./components/navbar.html');
-            var scroll_pos = 0;
-            $(document).scroll(function() {
-                scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 100) {
-                    $('.navbar').css('box-shadow', '0px 2px 3px rgb(0,0,0,.3)');
-                } else {
-                    $('.navbar').css('box-shadow', 'none');
-                }
-            });
-        });
+      $(document).ready(function () {
+        $("body>footer").load("./components/footer.html");
+        $("body>header").load("./components/navbar.html");
+      });
+
+      // Show the first tab and hide the rest
     </script>
-    <script src='assets/scripts/sheetsToJSON.js'></script>
-    <script src='assets/scripts/headshots.js'></script>
-    <title>Pearl Hacks</title>
-</head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+        integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='assets/scripts/schedule.js'></script>
+    <script src='assets/scripts/workshop.js'></script>
+    <title>Schedule | Pearl Hacks</title>
+  </head>
 
-<body>
-    <header>
+  <body style="background-color: aliceblue">
+    <header></header>
+    <main id="resourcepage">
+      <div id="decoration1">
+        <header class="py-0 m-0">
+          <h1
+            style="background-color: var(--darkblue); color: var(--lightblue)"
+            class="py-3 m-0"
+          >
+            Event Schedule
+          </h1>
+        </header>
+      </div>
+      <div class="container my-3">
+        <div class="tabs">
+          <p class="text-center">*Schedule is listed in Eastern Standard Time (EST)</p>
+          <ul id="tabs-nav" class="row d-flex justify-content-center pb-3 m-0">
+            <li class = "mr-3"><a href="#tab1">In-Person</a></li>
+            <li><a href="#tab2">Virtual</a></li>
+          </ul>
+          <!-- END tabs-nav -->
+          <div id="tabs-content">
+            <div id="tab1" class="tab-content">
+              <div class="row d-flex justify-content-around p-0 m-0" id = "tab1-content"></div>
+            </div>
+            <div id="tab2" class="tab-content">
+              <div class="row d-flex justify-content-around p-0 m-0" id ="tab2-content"></div>
+            </div>
+          </div>
+          <!-- END tabs-content -->
+        </div>
+        <!-- END tabs -->
+        <p class="mt-5">*Hackers must have their own computers/laptops and peripherals (mice, keyboards, USB drives, etc). Mac and Windows OS are both suited for hacking; Android and iOS apps will be judged equally.</p>
+        <p class="mb-5">Check out our <a href="https://www.notion.so/Pearl-Hacks-Hacker-Guide-2022-531155aee9a44ab68fcd11c47f5fc26f">Pearl Hacks 2022 Hacker Guide</a> for more information!</p>
 
-    </header>
-    <main>Schedule</main>
-    <footer>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      $("#tabs-nav li:first-child").addClass("active");
+      $(".tab-content").hide();
+      $(".tab-content:first").show();
 
-    </footer>
-</body>
+      // Click function
+      $("#tabs-nav li").click(function () {
+        $("#tabs-nav li").removeClass("active");
+        $(this).addClass("active");
+        $(".tab-content").hide();
 
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+      });
+    </script>
+  </body>
 </html>
