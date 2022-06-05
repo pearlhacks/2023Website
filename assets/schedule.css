@@ -1,1 +1,179 @@
-tbody{font-size:1rem}.tabs{border-radius:.5rem 0 0 .5rem}ul#tabs-nav{list-style:none;margin:0;padding:5px;overflow:auto;padding-left:1rem}ul#tabs-nav li{float:left;font-weight:700;padding:8px 10px;cursor:pointer;border:2px solid var(--light);border-radius:3rem;padding:.5rem 1.5rem}ul#tabs-nav li:hover{background-color:var(--orange);border:2px solid var(--orange)}ul#tabs-nav li.active{background-color:var(--light);border:2px solid var(--light)}ul#tabs-nav li.active a,ul#tabs-nav li.hover a{color:var(--darkblue)}#tabs-nav li a{text-decoration:none;color:var(--darkblue);font:bold 1.2rem "Caviar Dreams"}.tab-content{padding:0 1rem 1rem 1rem}tr{border-bottom:2px #fff solid}tr th{background-color:#fff;border-radius:.5rem .5rem 0 0;border-style:none!important}tr.header-row,tr.last-tr{border-bottom:none!important}table h3{font:bold 1.5rem "Caviar Dreams"}@media(min-width:992px){td{width:50%}td:first-child{width:25%}td:last-child{width:25%}}.workshop>*{font-size:1.15rem}.workshop td,#workshop-content tr th{text-align:left}td:nth-of-type(1){font-weight:700}.workshop td:nth-of-type(1){width:15%!important;font-weight:400}.workshop td:nth-of-type(2){width:55%!important}.workshop td:nth-of-type(3){width:15%!important}.workshop td:nth-of-type(4){width:15%!important}.collapse-wrapper{border:1px solid var(--light2)}.collapser{font-size:1.15rem;padding:0;display:flex;justify-content:flex-start;cursor:pointer}.collapsed:after,.collapser:after{content:none}.collapse-wrapper .collapsed{display:flex;justify-content:space-between;align-items:center;padding-right:1rem;padding-left:1rem}.collapse-wrapper .collapsed:after{content:"\002B"!important;font-weight:700}.collapser+div{padding-left:1rem;text-align:left}.desc-ws.collapser:hover{color:#8174e2}.desc-ws.collapser::before{content:"\2212";padding-right:.5rem}.desc-ws.collapsed:before{content:"\002B"!important;padding-right:.5rem}span.collapser{font-weight:bold!important}#workshop-content tr td:nth-of-type(2):hover{color:var(--midblue)}table a{color:var(--darkblue);text-decoration:underline} .table.workshop{min-width: 600px}
+tbody {
+    font-size: 1rem
+}
+
+.tabs {
+    border-radius: .5rem 0 0 .5rem
+}
+
+ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+    padding-left: 1rem
+}
+
+ul#tabs-nav li {
+    float: left;
+    font-weight: 700;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: 2px solid var(--turquoise);
+    border-radius: 3rem;
+    padding: .5rem 1.5rem
+}
+
+ul#tabs-nav li:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--orange)
+}
+
+ul#tabs-nav li.active {
+    background-color: var(--turquoise);
+    border: 2px solid var(--turquoise)
+}
+
+ul#tabs-nav li.active a,
+ul#tabs-nav li.hover a {
+    color: var(--darkgreen)
+}
+
+#tabs-nav li a {
+    text-decoration: none;
+    color: var(--darkgreen);
+    font: bold 1.2rem "Caviar Dreams"
+}
+
+.tab-content {
+    padding: 0 1rem 1rem 1rem
+}
+
+tr {
+    border-bottom: 2px #fff solid
+}
+
+tr th {
+    background-color: #fff;
+    border-radius: .5rem .5rem 0 0;
+    border-style: none !important
+}
+
+tr.header-row,
+tr.last-tr {
+    border-bottom: none !important
+}
+
+table h3 {
+    font: bold 1.5rem "Caviar Dreams"
+}
+
+@media(min-width:992px) {
+    td {
+        width: 50%
+    }
+
+    td:first-child {
+        width: 25%
+    }
+
+    td:last-child {
+        width: 25%
+    }
+}
+
+.workshop>* {
+    font-size: 1.15rem
+}
+
+.workshop td,
+#workshop-content tr th {
+    text-align: left
+}
+
+td:nth-of-type(1) {
+    font-weight: 700
+}
+
+.workshop td:nth-of-type(1) {
+    width: 15% !important;
+    font-weight: 400
+}
+
+.workshop td:nth-of-type(2) {
+    width: 55% !important
+}
+
+.workshop td:nth-of-type(3) {
+    width: 15% !important
+}
+
+.workshop td:nth-of-type(4) {
+    width: 15% !important
+}
+
+.collapse-wrapper {
+    border: 1px solid var(--turquoise2)
+}
+
+.collapser {
+    font-size: 1.15rem;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer
+}
+
+.collapsed:after,
+.collapser:after {
+    content: none
+}
+
+.collapse-wrapper .collapsed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem
+}
+
+.collapse-wrapper .collapsed:after {
+    content: "\002B" !important;
+    font-weight: 700
+}
+
+.collapser+div {
+    padding-left: 1rem;
+    text-align: left
+}
+
+.desc-ws.collapser:hover {
+    color: #8174e2
+}
+
+.desc-ws.collapser::before {
+    content: "\2212";
+    padding-right: .5rem
+}
+
+.desc-ws.collapsed:before {
+    content: "\002B" !important;
+    padding-right: .5rem
+}
+
+span.collapser {
+    font-weight: bold !important
+}
+
+#workshop-content tr td:nth-of-type(2):hover {
+    color: var(--beige)
+}
+
+table a {
+    color: var(--darkgreen);
+    text-decoration: underline
+}
+
+.table.workshop {
+    min-width: 600px
+}
