@@ -4,11 +4,11 @@
 }
 
 .transparent-nav a {
-    color: white !important
+    color: var(--darkgreen) !important
 }
 
 .transparent-nav a.dropdown-item {
-    color: var(--darkgreen) !important
+    color: var(--beige) !important
 }
 
 .transparent-nav a.dropdown-item:hover {
@@ -18,7 +18,7 @@
 .transparent-nav .navbar-brand span,
 .transparent-nav .navbar-brand b {
     /* color: white !important; */
-    color: var(--beige) !important;
+    color: var(--red) !important;
     font-weight: 700
 }
 
@@ -38,6 +38,6 @@ main p {
 @media (min-width:992px) {
     .nav-background {
         /* background-color: #586b9d */
-        background-color: var(--darkgreen)
+        background-color: var(--beige)
     }
 }

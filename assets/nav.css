@@ -4,7 +4,7 @@
     }
 
     .navbar-nav a {
-        color: #fff
+        color: var(--darkgreen)
     }
 
     .navbar-nav a:hover {
@@ -19,6 +19,6 @@
     }
 
     #navbar-dropdown>ul>li.nav-item.dropdown.show>div>a:hover {
-        color: var(--beige) !important
+        color: var(--darkgreen) !important
     }
 }

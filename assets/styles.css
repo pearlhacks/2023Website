@@ -20,7 +20,7 @@
 
 @-webkit-keyframes launch {
     0% {
-        transform: translateX(6rem);
+        transform: translateX(-6rem);
         opacity: 0
     }
 
@@ -32,7 +32,7 @@
 
 @keyframes launch {
     0% {
-        transform: translateX(6rem);
+        transform: translateX(-6rem);
         opacity: 0
     }
 
@@ -137,11 +137,17 @@ pp .jumbotron {
 }
 
 .jumbotron p {
-    color: #fff
+    color: var(--darkgreen);
+    font-weight: 300;
+}
+
+.jumbotron h2 {
+    color: var(--darkgreen);
+    font-style: italic;
 }
 
 #down-indicator {
-    color: var(--beige);
+    color: var(--red);
     position: absolute;
     bottom: 2rem;
     animation: bobble 1s infinite alternate;
@@ -156,15 +162,16 @@ pp .jumbotron {
 }
 
 .btn-main {
-    background-color: var(--beige);
-    color: var(--darkgreen);
-    font-weight: 700
+    background-color: var(--red);
+    color: var(--beige);
+    font-weight: 700;
+    font-family: var(--secondary-font);
 }
 
 .btn-main:hover {
     background-color: transparent;
     color: #fff;
-    border: 1px solid var(--beige);
+    border: 1px solid var(--red);
     font-weight: 700
 }
 
@@ -173,13 +180,13 @@ pp .jumbotron {
 }
 
 .btn {
-    background-color: var(--beige);
-    color: var(--darkgreen)
+    background-color: var(--red);
+    color: var(--beige)
 }
 
 .btn-secondary {
-    background-color: var(--red);
-    color: var(--beige)
+    background-color: var(--darkgreen);
+    color: var(--red)
 }
 
 #header-top {
@@ -467,7 +474,7 @@ h2.lead {
 
 .navbar-brand span,
 .navbar-brand b {
-    font-family: var(--secondary-font) !important
+    font-family: var(--secondary-font) !important;
 }
 
 .navbar-toggler {
@@ -479,7 +486,7 @@ h2.lead {
 }
 
 #homepage .transparent-nav a.nav-link:hover {
-    color: var(--beige) !important;
+    color: var(--red) !important;
     transform: scale(1.01)
 }
 
@@ -620,7 +627,7 @@ i.rounded-circle {
 }
 
 .hero-title {
-    color: var(--beige)
+    color: var(--red)
 }
 
 .stars,
@@ -688,19 +695,19 @@ i.rounded-circle {
     animation: move-twink-back 450s linear infinite
 }
 
-#animate-left {
+#animate-right {
     height: 100%;
     transform: translateY(4rem);
     opacity: 0;
     animation: launch 1s 1s ease-out forwards;
-    -webkit-animation: launch 1s 1s ease-out forwards
+    -webkit-animation: launch 1s 1s ease-out forwards;
 }
 
 .mascot {
-    width: 100%;
+    width: 150%;
     padding: 5%;
     max-width: 450px;
-    height: auto
+    height: auto;
 }
 
 @media only screen and (max-width:991px) {
