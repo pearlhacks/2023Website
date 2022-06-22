@@ -241,13 +241,13 @@ main>header {
 }
 
 main h1 {
-    font: bold 3rem/3rem "Caviar Dreams"
+    font: bold 3rem/3rem "Caviar Dreams";
 }
 
 main h2 {
     color: var(--red);
-    font: 2.25em/2.25rem "Caviar Dreams";
-    font-weight: 700
+    font: 3em/3rem "Caviar Dreams";
+    font-weight: 700;
 }
 
 main h3 {
@@ -281,7 +281,7 @@ main p {
     border-top-right-radius: 0.75rem !important
 }
 
-.display-4 {
+.display-2 {
     font-weight: 700;
     letter-spacing: .5rem
 }
@@ -706,8 +706,9 @@ i.rounded-circle {
 .mascot {
     width: 150%;
     padding: 5%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
+    margin: 5%;
 }
 
 @media only screen and (max-width:991px) {
