@@ -513,7 +513,7 @@ h2.lead {
 
 .dropdown-menu,
 .transparent-nav .dropdown-menu {
-    background-color: white !important
+    background-color: var(--beige) !important
 }
 
 .dropdown-menu a {
