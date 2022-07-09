@@ -24,7 +24,7 @@
 
 .transparent-nav .navbar-toggler i {
     /* color: white !important */
-    color: var(--beige) !important
+    color: var(--red) !important
 }
 
 .jumbotron {
@@ -36,8 +36,8 @@ main p {
 }
 
 @media (min-width:992px) {
-    .nav-background {
-        /* background-color: #586b9d */
+    /* .nav-background {
+        background-color: #586b9d
         background-color: var(--beige)
-    }
+    } */
 }

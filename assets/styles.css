@@ -499,11 +499,16 @@ h2.lead {
     color: var(--orange)
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1200px) {
     #navbar-dropdown {
         display: flex;
         justify-content: flex-end;
         margin-right: 100px
+    }
+
+    #social-banner {
+        display: flex;
+        justify-content: left;
     }
 }
 
@@ -560,17 +565,25 @@ footer i {
     color: white !important
 }
 
-footer ul {
+footer ul,
+header ul {
     list-style-type: none
 }
 
 footer ul li i {
     font-size: 2rem;
     margin-right: 1rem;
-    color: var(--beige) !important
+    color: var(--turquoise) !important
 }
 
-footer ul li i:hover {
+header ul li i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--red) !important
+}
+
+footer ul li i:hover,
+header ul li i:hover {
     color: var(--beige_transparent) !important
 }
 
