@@ -569,6 +569,7 @@ footer {
     flex-wrap: wrap;
     background: url(images/pond-01.svg);
     background-size: cover;
+    background-color: #417180;
 }
 
 footer p,
