@@ -6,7 +6,7 @@
 <nav class="navbar navbar-expand-xl fixed-top transparent-nav" style="z-index: 1000">
   <a class="navbar-brand d-flex align-items-center align-content-center" href="index.html">
     <img class="mr-2" src="assets/images/ph-favicon.svg" width="30" height="30" alt="Pearl Hacks Logo" />
-    <span style="font-weight: bold"><b>Pearl Hacks</b> 2023</span>
+    <span style="font-weight: bold"><b id="nav-name">Pearl Hacks 2023</b> </span>
   </a>
   <button class="navbar-toggler m-0 mr-sm-5 pr-sm-5" type="button" data-toggle="collapse" data-target="#social-banner"
     aria-controls="social-banner" aria-expanded="falses" aria-label="Toggle social banner">
@@ -58,16 +58,20 @@
             Login</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="schedule.html">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="workshops.html">Workshops</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="events.html">Events</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Schedule
+        </a>
+        <div class="dropdown-menu shadow-sm transparent-nav text-dark"
+          aria-labelledby="navbar-dropdown-link-registration">
+          <a class="nav-link" href="schedule.html">Day Of</a>
+          <a class="nav-link" href="workshops.html">Workshops</a>
+          <a class="nav-link" href="events.html">Events</a>
+        </div>
       </li>
       <li> <a class="nav-link" href="resources.html">Resources</a>
+      </li>
+      <li> <a class="nav-link" href="resources.html">FAQ</a>
       </li>
   </div>
 </nav>
