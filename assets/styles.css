@@ -275,6 +275,11 @@ main p {
     line-height: 1.5rem
 }
 
+article {
+    overflow: clip;
+    overflow-clip-margin: 20em;
+}
+
 .raise {
     position: relative;
     z-index: 11
@@ -569,7 +574,9 @@ footer {
     flex-wrap: wrap;
     background: url(images/pond-01.svg);
     background-size: cover;
-    background-color: #417180;
+    padding-top: 10%;
+    position: relative;
+    z-index: 5;
 }
 
 footer p,
