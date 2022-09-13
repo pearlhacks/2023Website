@@ -8,7 +8,7 @@
     }
 
     .navbar-nav a:hover {
-        color: var(--turquoise) !important;
+        color: var(--red) !important;
         transform: scale(1.01)
     }
 

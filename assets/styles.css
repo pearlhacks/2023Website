@@ -327,42 +327,6 @@ h2.lead {
     background-color: var(--beige)
 }
 
-#decoration1 {
-    width: 100vw;
-    height: 20vw;
-    background-image: url(assets/images/headerwave.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%
-}
-
-#decoration2-desktop {
-    width: 100vw;
-    height: 15vw;
-    max-height: 300px;
-    background-image: url(assets/images/headerwave2.svg);
-    background-repeat: no-repeat;
-    background-size: 120% 100%;
-    background-position: center
-}
-
-#decoration2 {
-    width: 100vw;
-    height: 20vw;
-    background-image: url(assets/images/headerwave2.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%
-}
-
-#decoration1-desktop {
-    width: 100vw;
-    height: 15vw;
-    max-height: 300px;
-    background-image: url(assets/images/headerwave.svg);
-    background-repeat: no-repeat;
-    background-size: 120% 100%;
-    background-position: center
-}
-
 @media (min-width:992px) {
     #home_main {
         height: 100%;
@@ -809,58 +773,57 @@ i.rounded-circle {
 }
 
 #decoration1 {
+    height: 40vw;
+    background-image: url(assets/images/subpageHeader.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#decoration2 {
     width: 100vw;
     height: 20vw;
-    background-image: url(images/header-mobile.svg);
+    background-image: url(assets/images/subpageHeader2.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%
 }
 
 @media all and (min-width:992px) {
     #decoration1 {
-        width: 100vw;
-        height: 15vw;
-        max-height: 300px;
-        min-height: 200px;
-        background-image: url(images/headerwave.svg);
+        height: 40vw;
+        background-image: url(images/subpageHeader.svg);
         background-repeat: no-repeat;
-        background-size: 120% 100%;
+        background-size: cover;
         background-position: center;
         padding-top: 2rem
     }
 
     #decoration2 {
-        width: 100vw;
         height: 10vw;
         max-height: 300px;
         min-height: 100px;
         background-image: url(images/headerwave2.svg);
         background-repeat: no-repeat;
-        background-size: 120% 100%;
+        background-size: cover;
         background-position: center
     }
 }
 
 @media all and (max-width:991px) {
     #decoration1 {
-        width: 100vw;
-        height: 20vw;
-        max-height: 300px;
-        min-height: 200px;
-        background-image: url(images/headerwave.svg);
+        height: 40vw;
+        background-image: url(images/subpageHeader.svg);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         padding-top: 2rem
     }
 
     #decoration2 {
-        width: 100vw;
         height: 20vw;
         max-height: 300px;
         min-height: 200px;
         background-image: url(images/headerwave2.svg);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         padding-top: 2rem
     }
 }
@@ -872,6 +835,13 @@ i.rounded-circle {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+#decoration1-desktop header h1,
+#decoration1 header h1,
+#decoration2-desktop header h1,
+#decoration2 header h1 {
+    color: var(--red);
 }
 
 @media screen and (max-width:500px) {
