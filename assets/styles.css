@@ -841,7 +841,7 @@ i.rounded-circle {
 #decoration1 header h1,
 #decoration2-desktop header h1,
 #decoration2 header h1 {
-    color: var(--red);
+    color: var(--beige);
 }
 
 @media screen and (max-width:500px) {
