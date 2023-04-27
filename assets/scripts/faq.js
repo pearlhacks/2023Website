@@ -1,7 +1,7 @@
 let link2 = 'https://script.google.com/macros/s/AKfycbz6X5a9OCGCNkFkpW2qpIayQL7HQfC1zYYj5VSPdc2L0o-4G6v5mLoQe0PA_FK_HNxjBQ/exec'
 async function getFAQ() {
 
-    let res = await axios.get(link2,        {
+    let res = await axios.get(link2, {
         mode: "cors",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -21,7 +21,7 @@ async function getFAQ() {
             guidelines.push(data[i])
         }
     }
-    let html = "<h2>General FAQ</h2><div id='generalfaq'><div class='row'>"
+    let html = "<h2>PH 2023 General FAQ</h2><div id='generalfaq'><div class='row'>"
     for (let gen = 0; gen < general.length; gen++) {
         html += `<div class='col-12 col-lg-6'>
         <div class='rounded collapse-wrapper mb-2'>
@@ -30,7 +30,7 @@ async function getFAQ() {
         </div></div>`
     }
 
-    html += "</div></div></div><h2 class='mt-5'>Guidelines</h2><div id='guidelines' class = 'pb-3'><div class='row'>"
+    html += "</div></div></div><h2 class='mt-5'>Non-UNC FAQ</h2><div id='guidelines' class = 'pb-3'><div class='row'>"
     for (let gu = 0; gu < guidelines.length; gu++) {
         html += `<div class='col-12 col-lg-6'>
         <div class='rounded collapse-wrapper mb-2'>

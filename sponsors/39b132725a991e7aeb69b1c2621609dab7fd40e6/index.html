@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150933241-1");
+    </script>
+    <!--script type="text/javascript">
+    var pass 
+    var admin = "Pearl-2022";
+    pass=prompt('please enter pass to view page')
+    pass == admin ? '' : window.location = "https://pearlhacks.com"
+
+    </script>
+
+    <!-- Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Cache-control" content="public" />
+    <meta
+      name="description"
+      content="Pearl Hacks is a hackathon for female and gender non-conforming students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology."
+    />
+    <meta
+      name="google-site-verification"
+      content="BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./../../assets/images/ph-favicon.svg"
+      type="image/svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="./../../assets/images/ph-favicon.svg"
+      type="image/svg"
+    />
+
+    <!-- CSS (Bootstrap, Custom Styles -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../../assets/styles.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+
+    <!-- Bootstrap Script Requirements (Slim JQuery, Popper, Bootstrap, Font Awesome) -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54e7e1ecc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      main a {
+        text-decoration: underline;
+      }
+
+      main h2 {
+        color: var(--darkgreen);
+      }
+
+      main .container {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    </style>
+    <title>Pearl Hacks</title>
+  </head>
+
+  <body>
+    <header>
+      <style>
+        /* @media (min-width:1350px) { */
+        .navbar {
+          background-color: var(--beige);
+        }
+
+        .navbar-nav a {
+          color: var(--darkgreen);
+        }
+
+        .navbar-nav a:hover {
+          color: var(--red) !important;
+          transform: scale(1.01);
+        }
+
+        .navbar-brand span,
+        .navbar-brand b {
+          font-family: var(--secondary-font) !important;
+          color: var(--red);
+        }
+
+        #navbar-dropdown > ul > li.nav-item.dropdown.show > div > a:hover {
+          color: var(--darkgreen) !important;
+        }
+
+        /* } */
+      </style>
+      <a id="mlh-badge"
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white"
+        target="new" name="mlh badge">
+        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
+          class="d-none d-sm-inline" alt="MLH Badge" />
+      </a>
+      </a>
+      <nav
+        class="navbar navbar-expand-lg fixed-top transparent-nav"
+        style="z-index: 1000"
+      >
+        <a
+          class="navbar-brand d-flex align-items-center align-content-center"
+          href="./../index.html"
+        >
+          <img
+            class="mr-2"
+            src="./../../assets/images/ph-favicon.svg"
+            width="30"
+            height="30"
+            alt="Pearl Hacks Logo"
+          />
+          <span style="font-weight: bold"><b>Pearl Hacks</b> 2023</span>
+        </a>
+        <button
+          class="navbar-toggler m-0 mr-sm-5 pr-sm-5"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-dropdown"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="social-banner">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/pearlhacks/"
+                target="blank"
+                name="instagram"
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/pearlhackathon/"
+                target="blank"
+                name="facebook"
+              >
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://twitter.com/PearlHacks"
+                target="blank"
+                name="twitter"
+              >
+                <i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="mailto:questions@pearlhacks.com"
+                target="blank"
+                name="email"
+              >
+                <i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/pearlhacks"
+                target="blank"
+                name="github"
+              >
+                <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-dropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./../../schedule.html"> Schedule </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../../events.html"> Events </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbar-dropdown-link"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                More Info</a
+              >
+              <div
+                class="dropdown-menu shadow-sm transparent-nav text-dark"
+                aria-labelledby="navbar-dropdown-link"
+              >
+                <a
+                  class="dropdown-item"
+                  style="z-index: 1000"
+                  href="./../../aboutus.html"
+                  target="new"
+                  >About Us</a
+                >
+                <a
+                  class="dropdown-item"
+                  style="z-index: 1000"
+                  href="./../../resources.html"
+                  target="new"
+                  >Resources</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main style="background-color: var(--beige)">
+      <div id="decoration1">
+        <header class="py-0 m-0">
+          <h1 class="py-3 m-0">2023 Pearlhacks Resume Database</h1>
+        </header>
+      </div>
+      <div class="mt-5 mx-4">
+        <section class="container">
+          <h2>Participant Info</h2>
+          <ul>
+            <li>
+              Participant Resumes:
+              <a href="./assets/Pearl Hacks 2023 Resume Database [FINAL].zip"
+                >Download (.zip)</a
+              >
+            </li>
+          </ul>
+        </section>
+        <!-- <table class="table table-hover table-striped table-bordered mt-4 mb-0">
+        <thead>
+          <tr>
+            <th scope="col">Form</th>
+            <th scope="col">Due Date</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23MarketingPermissions">Marketing Permissions</a></th>
+            <td>01/06/2023</td>
+            <td>All Tiers</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23SponsorWorkshop1">Sponsor Workshop Form #1</a></th>
+            <td>01/06/2023</td>
+            <td>Pearl and Gold Tier Only</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23SponsorWorkshop2">Sponsor Workshop Form #2</a></th>
+            <td>01/20/2023</td>
+            <td>Pearl and Gold Tier Only</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23CompanyShipments">Company Shipment Information</a></th>
+            <td>01/27/2023</td>
+            <td>All Tiers</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23DepartmentJudges">Department Judge Sign-up</a></th>
+            <td>01/27/2023</td>
+            <td>All Tiers</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23SponsorJudging">Sponsor Judges & Prizes</a></th>
+            <td>01/27/2023</td>
+            <td>All Tiers</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23SponsorMentoring">Sponsor Mentor Sign-up</a></th>
+            <td>01/27/2023</td>
+            <td>All Tiers</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="https://go.unc.edu/PH23SponsorSwag">Swag Information</a></th>
+            <td>No Due Date</td>
+            <td>All Tiers</td>
+          </tr>
+        </tbody>
+      </table> -->
+      </div>
+
+      <!-- <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Pearl</h2>
+          Pearl Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Pearl.zip">Download (.zip)</a>
+        </div>
+        <div class="col-sm">
+          <h2>Gold</h2>
+          Gold Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Gold.zip">Download (.zip)</a>
+        </div>
+        <div class="col-sm">
+          <h2>Silver</h2>
+          Silver Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Silver.zip">Download (.zip)</a>
+        </div>
+        <div class="col-sm">
+          <h2>Due Dates</h2>
+        </div>
+      </div>
+    </div> -->
+      <!-- <section class="container">
+      <section class="mt-4">
+        <h2>Pearl</h2>
+        Pearl Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Pearl.zip">Download (.zip)</a>
+      </section>
+      <section class="mt-4">
+        <h2>Gold</h2>
+        Gold Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Gold.zip">Download (.zip)</a>
+      </section>
+      <section class="mt-4">
+        <h2>Silver</h2>
+        Silver Sponsor Forms: <a href="./assets/Pearl Hacks 2022 Silver.zip">Download (.zip)</a>
+      </section>
+      <section class="mt-4">
+        <h2>Meeting Recording</h2>
+        Sponsor Meeting Recording: <a href="./assets/Sponsor_Meeting_Recording.mp4.zip">Download (.zip)</a>
+      </section>
+      <section class="mt-4">
+        <h2>Discord</h2>
+        Click here for the updated discord invite link: <a href="https://bit.ly/PHDiscord22">Discord</a>
+      </section>
+    </section> -->
+    </main>
+    <footer style="background-color: var(--beige)">
+      <div class="container mt-5">
+        <div class="row py-4 border-bottom d-flex justify-content-between">
+          <div class="col-12 col-md-4">
+            <h2>Keep up with us</h2>
+            <!-- Begin Mailchimp Signup Form -->
+            <link
+              href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+              rel="stylesheet"
+              type="text/css"
+            />
+            <style type="text/css">
+              #mc_embed_signup form {
+                padding: 0px;
+              }
+
+              #mc_embed_signup input.email {
+                width: 85%;
+                height: 2.5rem;
+              }
+
+              #mc_embed_signup label {
+                color: white;
+                font: bold 1.25rem "Proxima Nova";
+              }
+
+              #mc_embed_signup input.button {
+                color: #34375a;
+                background-color: #ffdfb2;
+                margin-top: 20px;
+                width: auto !important;
+                height: auto !important;
+                font-weight: bold;
+                border-radius: 3rem;
+                padding: 0.25rem 1.5rem;
+              }
+
+              #mc_embed_signup input.button:hover {
+                background-color: transparent;
+                color: white;
+                border: 1px solid var(--light);
+                font-weight: bold;
+              }
+
+              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+              <form
+                action="https://pearlhacks.us17.list-manage.com/subscribe/post?u=211594c9660fc6331ed123271&amp;id=30e1fce0d4"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_blank"
+                novalidate
+              >
+                <div id="mc_embed_signup_scroll">
+                  <label for="mce-EMAIL">Join our mailing list!</label>
+                  <input
+                    type="email"
+                    value=""
+                    name="EMAIL"
+                    class="email"
+                    id="mce-EMAIL"
+                    placeholder="email address"
+                    required
+                  />
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div
+                    style="position: absolute; left: -5000px"
+                    aria-hidden="true"
+                  >
+                    <input
+                      type="text"
+                      name="b_211594c9660fc6331ed123271_30e1fce0d4"
+                      tabindex="-1"
+                      value=""
+                    />
+                  </div>
+                  <div class="clear">
+                    <input
+                      type="submit"
+                      value="Subscribe"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      class="button"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+          </div>
+          <div class="col-12 col-md-4 admin">
+            <h2>Administration</h2>
+            <p>
+              Pearl Hacks abides by the
+              <a
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                target="blank"
+                >MLH Code of Conduct</a
+              >.
+            </p>
+            <p>
+              For questions or feedback, contact us at
+              <a href="mailto:questions@pearlhacks.com" target="blank"
+                >questions@pearlhacks.com</a
+              >
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h2>Inclusivity Statement</h2>
+            <p>
+              Pearl Hacks is an event designed to uplift and center women and
+              non-binary students. We expect all of our mentors, volunteers,
+              participants, directors, sponsors, judges, and visitors to be
+              respectful of our participants" gender identities and expressions.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-4 d-sm-flex justify-content-between">
+          <p>
+            Made with <i class="far fa-heart"></i> by
+            <a href="https://github.com/pearlhacks" target="blank"
+              >Pearl Hacks</a
+            >
+          </p>
+          <ul class="d-flex p-0">
+            <li>
+              <a href="https://www.facebook.com/pearlhackathon/" target="blank">
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/PearlHacks" target="blank">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:questions@pearlhacks.com" target="blank">
+                <i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pearlhacks/" target="blank">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/pearlhacks" target="blank">
+                <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -9,7 +9,8 @@ $(document).ready(function () {
 let scroll_pos = 0; const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 $(document).scroll(function () {
-    scroll_pos = $(this).scrollTop(); if (window.pageYOffset < 100) {
+    scroll_pos = $(this).scrollTop();
+    if (window.pageYOffset < 100) {
         $(".navbar-nav").addClass("nav-background")
     }
     if (window.pageYOffset > 100) {

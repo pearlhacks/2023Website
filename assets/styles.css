@@ -773,7 +773,7 @@ i.rounded-circle {
 }
 
 #decoration1 {
-    height: 40vw;
+    height: 36vw;
     background-image: url(assets/images/subpageHeader.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -789,12 +789,12 @@ i.rounded-circle {
 
 @media all and (min-width:992px) {
     #decoration1 {
-        height: 40vw;
+        height: 24vw;
         background-image: url(images/subpageHeader.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        padding-top: 2rem
+        background-position: top;
+        padding-top: 6rem
     }
 
     #decoration2 {
@@ -945,10 +945,10 @@ i.rounded-circle {
     }
 }
 
-#workshoppage p,
+/* #workshoppage p,
 #workshoppage {
     font-size: 1.15rem;
-}
+} */
 
 .jumbotron p {
     font-size: 1.15rem

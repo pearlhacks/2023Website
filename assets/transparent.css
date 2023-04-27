@@ -35,9 +35,12 @@ main p {
     font-weight: 500
 }
 
-@media (min-width:992px) {
-    /* .nav-background {
-        background-color: #586b9d
-        background-color: var(--beige)
-    } */
+.nav-background {
+    background-color: var(--beige)
 }
+
+/* @media (min-width:992px) {
+    .nav-background {
+        background-color: var(--beige)
+    }
+} */

@@ -54,8 +54,14 @@
         scroll_pos = $(this).scrollTop();
         if (scroll_pos > 100) {
           $(".navbar").css("box-shadow", "0px 2px 3px rgb(0,0,0,.3)");
-        } else {
+        } else if (scroll_pos <= 100) {
           $(".navbar").css("box-shadow", "none");
+        }
+        if (window.pageYOffset < 100) {
+          $(".navbar").css("background-color", "var(--beige)");
+        }
+        if (window.pageYOffset > 100) {
+          $(".navbar").css("background-color", "white");
         }
       });
     });
